@@ -46,11 +46,48 @@
    2. Variables de la charte (à compléter avec les codes de la planche)
    -------------------------------------------------------------------------- */
 :root {
-  /* --mv-encre: ;   */
-  /* --mv-lichen: ;  */
-  /* ...             */
+--mv-encre: #1E2B33;
+--mv-lichen: #3D6B35;
+--mv-lichen-fonce: #30562A;
+--mv-ocre: #C9842B;
+--mv-craie: #F5F1E8;
+--mv-ardoise: #4A5763;
+--bs-body-font-family: "Atkinson Hyperlegible", system-ui, sans-serif;
+--bs-body-font-size: 1.0625rem; /* 17 px */
+--bs-body-color: var(--mv-encre);
+--bs-link-color-rgb: rgb(61,107,53);
+--bs-secondary-font-size: 0,875rem;
+--bs-secondary-color: var(--mv-ardoise);
+}
+h1, h2, h3, .h1, .h2, .h3 { font-family: "Fraunces", Georgia, serif; }
+
+.btn-primary {
+--bs-btn-bg: var(--mv-lichen);
+--bs-btn-border-color: var(--mv-lichen);
+--bs-btn-hover-bg: var(--mv-lichen-fonce);
+--bs-btn-hover-border-color: var(--mv-lichen-fonce);
+--bs-btn-active-bg: var(--mv-lichen-fonce);
+--bs-btn-active-border-color: var(--mv-lichen-fonce);
+--bs-btn-border-radius: 8px;
+
+}
+
+.btn-secondary {
+--bs-btn-secondary-bg: white;
+--bs-btn-secondary-color: var(--mv-encre);
+--bs-btn-secondary-border-color: var(--mv-encre);
+}
+
+.btn-badge{
+--bs-btn-badge-border-radius: 50px;
+--bs-btn-badge-bg: var(--mv-ocre);
+--bs-btn-badge-border-color: var(--mv-ocre);
+--bs-btn-badge-color: var(--mv-ardoise);
 }
 
 /* --------------------------------------------------------------------------
    3. Vos styles
    -------------------------------------------------------------------------- */
+
+   
+
