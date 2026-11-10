@@ -39,6 +39,7 @@
         </div>
       </div>
     </nav>
+
     <div class="bandeauInfo" id="bandeauInfo">
       <span>Nocturne gratuite chaque 1er jeudi du mois, jusqu'à 21h.</span>
       <button class="btn-close" aria-label="Fermer" onclick="document.getElementById('bandeauInfo').style.display = 'none';"></button>
@@ -47,11 +48,157 @@
   </header>
 
   <main id="contenu"><!-- Contenu principal de la page -->
-    <h1>efezzf</h1>
+    <section class="bandeauPrincipal">
+      <h1>Le Muséum de Valbrune</h1>
+      <p>Des cailloux, des plumes et beaucoup de questions : depuis 1868, le Muséum les rassemble sous un même toit.</p>
+      <button><a href="infos-pratiques.html">Préparer ma visite</a></button>
+      <button><a href="expositions.html">Voir les expositions</a></button>
+    </section>
+
+    <section class="aLAffiche">
+      <h2>A l'affiche</h2>
+      <p>Trois bonnes raisons de pousser la porte cet hiver.</p>
+      <div class="card">
+        <img class="card-img-top" src="assets/img/expo-geants-jurassique.webp" alt="Exposition sur les géants du Jurassique">
+        <div class="card-body">
+          <button class="btn-badge">Permanente</button>
+          <div class="card-title h3">Les Géants du Jurassique</div>
+          <div class="card-subtitle">GRANDE GALERIE</div>
+          <p class="card-text">Squelettes, empreintes et moulages : la grande galerie raconte 150 millions d'années en quarante pas.</p>
+          <a href="expositions.html">En savoir plus --></a>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="assets/img/expo-lumieres-sous-sol.webp" alt="Exposition les lumières du sous-sol">
+        <div class="card-body">
+          <button class="btn-badge">Temporaire</button>
+          <div class="card-title h3">Lumières du sous-sol</div>
+          <div class="card-subtitle">DU 14 OCTOBRE 2026 AU 28 FEVRIER 2027</div>
+          <p class="card-text">Deux cents minéraux fluorescents s'allument sous vos yeux, dans une salle plongée dans le noir.</p>
+          <a href="expositions.html">En savoir plus --></a>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="assets/img/expo-plumes-riviere.webp" alt="Exposition sur les Plumes de rivière">
+        <div class="card-body">
+          <button class="btn-badge">Temporaire</button>
+          <div class="card-title h3">Plumes de rivière</div>
+          <div class="card-subtitle">DU 2 DECEMBRE 2026 AU 30 MAI 2027</div>
+          <p class="card-text">Hérons, martins-pêcheurs et bergeronnettes : les oiseaux de nos rivières comme vous ne les avez jamais écoutés.</p>
+          <a href="expositions.html">En savoir plus --></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="chiffresClef">
+      <h2>Le Muséum en chiffres</h2>
+      <ul>
+        <li><span class="chiffreClef">N</span><br>Spécimens conservés</li>
+        <li><span class="chiffreClef">N</span><br>Ans d'histoire</li>
+        <li><span class="chiffreClef">N</span><br>Visiteurs en 2025</li>
+        <li><span class="chiffreClef">N</span><br>Ateliers et visites par an</li>
+      </ul>
+    </section>
+
+    <section class="actualites">
+      <div class="blocActu">
+      <h2>Actualités</h2>
+      <ul class="list-group">
+        <li class="list-group-item">
+          <span>5 NOVEMBRE 2026</span>
+          <h3>La salle des minéraux rouvre après 6 mois de travaux</h3>
+          <p>Nouvel éclairage, nouvelles vitrines et un sol enfin silencieux : la salle des minéraux vous attend.</p>
+        </li>
+        <li class="list-group-item">
+          <span>22 OCTOBRE 2026</span>
+          <h3>Appel aux bénévoles pour l'inventaire d'hiver</h3>
+          <p>Vous aimez les étiquettes bien rangées ? Rejoignez l'équipe de l'inventaire, chaque mercredi après-midi.</p>
+        </li>
+        <li class="list-group-item">
+          <span>8 OCTOBRE 2026</span>
+          <h3>Une visite en langue des signes chaque mois</h3>
+          <p>Dès novembre, une visite guidée par mois est proposée en langue des signes française (LSF). Réservation conseillée.</p>
+        </li>
+      </ul>
+      </div>
+      <div class="formulaire">
+        <form action="post">
+          <fieldset>
+          <h2>La lettre du Muséum</h2>
+          <p>Une fois par mois, le programme et une curiosité tirée des réserves.</p>  
+          <label for="email">Votre adresse e-mail</label>
+          <input type="email" name="email">
+          <button type="submit">Je m'inscris</button>
+          <i>Désinscription en un clic. Voir nos mentions légales.</i>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+
+    <section class="prepareVisite">
+      <h2>Préparer sa visite</h2>
+      <div class="infoVisite">
+        <div class="blocInfoVisite">
+          <img src="assets/icones/horloge.svg" alt="">
+          <h3>Horaires</h3>
+          <p>Du mardi au dimanche, dès 10 h.</p>
+          <a href="infos-pratiques.html#horaires">Voir les horaires</a><span>--></span>
+        </div>
+        <div class="blocInfoVisite">
+          <img src="assets/icones/billet.svg" alt="">
+          <h3>Tarifs</h3>
+          <p>Gratuit pour les moins de 12 ans.</p>
+          <a href="infos-pratiques.html#tarifs">Voir les tarifs</a><span>--></span>
+        </div>
+        <div class="blocInfoVisite">
+          <img src="assets/icones/plan.svg" alt="">
+          <h3>Accès</h3>
+          <p>Tram B, arrêt Quai des Tanneurs.</p>
+          <a href="infos-pratiques.html#acces">Venir au Muséum</a><span>--></span>
+        </div>
+      </div>
+      
+    </section>
+    
   </main>
 
-  <footer>
-    <!-- Pied de page -->
+  <footer> <!-- Pied de page -->
+   <div class="colonnesFooter">
+    <div>
+      <img src="assets/img/logo-museum-valbrune-blanc.svg" alt="Logo blanc du Muséum de Valbrune">
+      <ul>
+        <li>Muséum de Valbrune 4, quai des Tanneurs, 00000 Valbrune</li>
+        <li>Tél. 01 99 00 42 17</li>
+        <li>contact@museum-valbrune.example</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Horaires</h3>
+      <ul>
+        <li>Mardi au vendredi : 10 h - 18 h</li>
+        <li>Samedi et dimanche : 10 h - 19 h</li>
+        <li>Fermé le lundi</li>
+      </ul>
+    </div>
+    <div>
+      <div>
+        <h3>Liens utiles</h3>
+        <ul>
+          <li><a href="infos-pratiques.html">Infos pratiques</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="mentions-legales.html">Mentions légales</a></li>
+        </ul>
+      </div>
+      <div class="reseauxSociaux">
+        <img src="" alt="Lien vers la page Facebook du Muséum de Valbrune">
+        <img src="" alt="Lien vers la page Instagram du Muséum de Valbrune">
+        <img src="" alt="Lien vers la chaine YouTube du Muséum de Valbrune">
+      </div>
+    </div>
+  </div>
+  <div class="basDePage">
+    <p>©2026 Muséum de Valbrune, site d'exercice réalisé par Simon Bert.</p>
+  </div>
   </footer>
 
   <!-- 3. Script de Bootstrap (bundle) : à ajouter ici, juste avant /body -->

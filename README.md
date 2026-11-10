@@ -51,12 +51,20 @@ Pour lancer le projet :
 |   09/11/26   | Sur quelles plateformes de réseau social êtes-vous et n’êtes pas encore ? | Nous n'avons pas encore de comptes mais il faut mettre des icones sans liens cliquables de Facebook, Instagram et X |
 
 ## Difficultés rencontrées et solutions trouvées
+- Comment faire disparaitre le bandeau d'information au clic sur la croix de fermeture => solution trouvée via Google Gemini : attribut onclick="document.getElementById('bandeauInfo').style.display = 'none';"
+- Comment faire un list-group => solution trouvée sur doc officielle de Bootstrap
+- Comment faire un menu dépliant sur les petits ecrans => solution trouvée dans le cours sur Bootstrap
 
 ## Sources consultées
 
 Listez les pages de documentation, tutoriels, vidéos, personnes qui vous ont aidé·e.
+- Cours sur Bootstrap, HTML et CSS
+- Google gemini
+- Documentation officielle Bootstrap
 
 ## Déclaration d'usage d'outils d'IA
 
 Indiquez ici, honnêtement, si vous avez utilisé un assistant d'IA, pour quoi faire et à quel moment.
 Si vous n'en avez pas utilisé, écrivez "Aucun".
+
+- Utilisation de Google Gemini lors de la recherche web : Comment faire disparaitre le bandeau d'information au clic sur la croix de fermeture
