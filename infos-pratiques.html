@@ -29,12 +29,12 @@
         </button>
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
           <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link" href="">Accueil</a></li>
-            <li class="nav-item"><a class="nav-link" href="">Le Muséum</a></li>
-            <li class="nav-item"><a class="nav-link" href="">Expositions</a></li>
-            <li class="nav-item"><a class="nav-link" href="">Agenda</a></li>
-            <li class="nav-item"><a class="nav-link" href="">Infos pratiques</a></li>
-            <li class="nav-item"><a class="nav-link" href="">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+            <li class="nav-item"><a class="nav-link" href="le-museum.html">Le Muséum</a></li>
+            <li class="nav-item"><a class="nav-link" href="expositions.html">Expositions</a></li>
+            <li class="nav-item"><a class="nav-link" href="agenda.html">Agenda</a></li>
+            <li class="nav-item"><a class="nav-link" href="infos-pratiques.html">Infos pratiques</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
             <li class="nav-item"><a class="nav-link" href="">Billeterie</a></li>
           </ul>
         </div>
@@ -51,7 +51,7 @@
   </header> 
 
   <main id="contenuInfosPratiques">
-    <section>
+    <section class="entete">
         <h1>Infos pratiques</h1>
         <p>Tout ce qu'il faut savoir avant de venir.</p>
     </section>
@@ -64,7 +64,7 @@
             <li><a href="#faq">Questions fréquentes</a></li>
         </ul>
     </section>
-    <section>
+    <section class="horaires">
         <div id="horaires">
             <img src="assets/icones/horloge.svg" alt="">
             <h2>Horaires</h2>
@@ -155,18 +155,144 @@ et 25 décembre.</i>
             </table>
         </div>
     </section>
-    <section>
+    <section class="acces">
         <div id="acces">
+            <img src="assets/icones/plan.svg" alt="">
             <h2>Accès</h2>
             <h3>Adresse</h3>
-            <p></p>
+            <p>Muséum de Valbrune,<br>
+            4, quai des Tanneurs,<br>
+            00000 Valbrune</p>
+            <h3>Transport</h3>
+            <p>En tram : ligne B, arrêt Quai des Tanneurs. En bus : lignes 12 et 27, arrêt Halle
+aux draps. À vélo : arceaux devant l'entrée principale. En voiture : parking
+Saint-Roch (payant) à 300 m.</p>
+            <h3>A pied</h3>
+            <p>Depuis la gare, comptez douze minutes à pied, vingt si vous vous arrêtez
+devant la vitrine du chocolatier.</p>
         </div>
         <div>
             <img src="assets/img/plan-acces.webp" alt="Plan d'accès au Muséum">
         </div>
     </section>
+    <section class="accessibilite" id="accessibilite">
+        <img src="assets/icones/accessibilite.svg" alt="">
+        <h2>Accessibilité</h2>
+        <p>Le Muséum est entièrement accessible aux personnes à mobilité réduite
+(ascenseurs et rampes).</p>
+        <ul>
+            <li>Prêt de fauteuils roulants et de cannes-sièges à l'accueil.</li>
+            <li>Boucle magnétique
+à l'accueil et dans l'auditorium./li>
+            <li>Une visite par mois en langue des signes
+française (LSF).</li>
+            <li>Chiens guides et d'assistance bienvenus.</li>
+        </ul>
+    </section>
+
+    <section class="faq" id="faq">
+        <h2>Questions fréquentes</h2>
+        <div class="accordion" id="accordeon">
+            <div class="card">
+                <div class="card-header" id="question1">
+                    <h4 class="mb-0">
+                        <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1" >Peut-on prendre des
+photos ?</button>
+                    </h4>
+                </div>
+                <div id="collapse1" class="collapse" aria-labelledby="question1" data-bs-parent="#accordeon">
+                    <div class="card-body">
+                        <p>Oui, sans flash et sans perche, sauf mention contraire dans les expositions
+temporaires.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="question2">
+                    <h4 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">Y a-t-il un vestiaire ?</button>
+                    </h4>
+                </div>
+                <div id="collapse2" class="collapse" aria-labelledby="question2" data-bs-parent="#accordeon">
+                    <div class="card-body">
+                        <p>Oui, un vestiaire gratuit est à votre disposition à l'accueil. Les valises ne sont
+pas acceptées.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="question3">
+                    <h4 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3" >Peut-on pique-niquer ?</button>
+                    </h4>
+                </div>
+                <div id="collapse3" class="collapse" aria-labelledby="question3" data-bs-parent="#accordeon">
+                    <div class="card-body">
+                        <p>Une salle hors-sac est réservée aux groupes scolaires en semaine ; le weekend,
+elle est ouverte à tous.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="question4">
+                    <h4 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">Combien de temps
+prévoir ?</button>
+                    </h4>
+                </div>
+                <div id="collapse4" class="collapse" aria-labelledby="question4" data-bs-parent="#accordeon">
+                    <div class="card-body">
+                        <p>Comptez deux heures pour les expositions permanentes, une heure de plus
+avec une exposition temporaire.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
   </main>
 
 
+
+<footer> <!-- Pied de page -->
+   <div class="colonnesFooter">
+    <div>
+      <img src="assets/img/logo-museum-valbrune-blanc.svg" alt="Logo blanc du Muséum de Valbrune">
+      <ul>
+        <li>Muséum de Valbrune 4, quai des Tanneurs, 00000 Valbrune</li>
+        <li>Tél. 01 99 00 42 17</li>
+        <li>contact@museum-valbrune.example</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Horaires</h3>
+      <ul>
+        <li>Mardi au vendredi : 10 h - 18 h</li>
+        <li>Samedi et dimanche : 10 h - 19 h</li>
+        <li>Fermé le lundi</li>
+      </ul>
+    </div>
+    <div>
+      <div>
+        <h3>Liens utiles</h3>
+        <ul>
+          <li><a href="infos-pratiques.html">Infos pratiques</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="mentions-legales.html">Mentions légales</a></li>
+        </ul>
+      </div>
+      <div class="reseauxSociaux">
+        <img src="" alt="Lien vers la page Facebook du Muséum de Valbrune">
+        <img src="" alt="Lien vers la page Instagram du Muséum de Valbrune">
+        <img src="" alt="Lien vers la chaine YouTube du Muséum de Valbrune">
+      </div>
+    </div>
+  </div>
+  <div class="basDePage">
+    <p>©2026 Muséum de Valbrune, site d'exercice réalisé par Simon Bert.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -54,12 +54,14 @@ Pour lancer le projet :
 - Comment faire disparaitre le bandeau d'information au clic sur la croix de fermeture => solution trouvée via Google Gemini : attribut onclick="document.getElementById('bandeauInfo').style.display = 'none';"
 - Comment faire un list-group => solution trouvée sur doc officielle de Bootstrap
 - Comment faire un menu dépliant sur les petits ecrans => solution trouvée dans le cours sur Bootstrap
+- Comment faire un fil d'ariane => solution trouvée sur doc officielle de Bootstrap
+- Comment faire un menu en accordéon (faq) => solution trouvée sur doc officielle de Bootstrap, complément nécessaire avec Gemini pour avoir les bons attributs de Bootstrap 5
 
 ## Sources consultées
 
 Listez les pages de documentation, tutoriels, vidéos, personnes qui vous ont aidé·e.
 - Cours sur Bootstrap, HTML et CSS
-- Google gemini
+- Google Gemini
 - Documentation officielle Bootstrap
 
 ## Déclaration d'usage d'outils d'IA
@@ -67,4 +69,5 @@ Listez les pages de documentation, tutoriels, vidéos, personnes qui vous ont ai
 Indiquez ici, honnêtement, si vous avez utilisé un assistant d'IA, pour quoi faire et à quel moment.
 Si vous n'en avez pas utilisé, écrivez "Aucun".
 
-- Utilisation de Google Gemini lors de la recherche web : Comment faire disparaitre le bandeau d'information au clic sur la croix de fermeture
+- Utilisation de Google Gemini lors de la recherche web : Comment faire disparaitre le bandeau d'information au clic de la croix de fermeture sur la page d'accueil
+- Utilisation de Google Gemini pour la recherche web et l'aide avec le code : Comment faire un menu en accordéon avec Bootstrap (faq)
