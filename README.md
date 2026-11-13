@@ -56,6 +56,7 @@ Pour lancer le projet :
 - Comment faire un menu dépliant sur les petits ecrans => solution trouvée dans le cours sur Bootstrap
 - Comment faire un fil d'ariane => solution trouvée sur doc officielle de Bootstrap
 - Comment faire un menu en accordéon (faq) => solution trouvée sur doc officielle de Bootstrap, complément nécessaire avec Gemini pour avoir les bons attributs de Bootstrap 5
+- Comment créer un blockquote => solution trouvée sur la doc HTML de developper.mozilla.org
 
 ## Sources consultées
 
