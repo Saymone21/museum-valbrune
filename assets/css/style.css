@@ -79,10 +79,10 @@ h1, h2, h3, .h1, .h2, .h3 { font-family: "Fraunces", Georgia, serif; }
 }
 
 .btn-badge{
---bs-btn-badge-border-radius: 50px;
---bs-btn-badge-bg: var(--mv-ocre);
---bs-btn-badge-border-color: var(--mv-ocre);
---bs-btn-badge-color: var(--mv-ardoise);
+  border-radius: 50px;
+  padding: 5px;
+  background-color: var(--mv-ocre);
+  color: var(--mv-encre);
 }
 
 /* --------------------------------------------------------------------------
@@ -90,6 +90,7 @@ h1, h2, h3, .h1, .h2, .h3 { font-family: "Fraunces", Georgia, serif; }
    -------------------------------------------------------------------------- */
 
 
+/* En-tête */
 header {
 background-color: white;
 }  
@@ -103,7 +104,38 @@ header a.active {
   color: var(--mv-encre);
 }
 
+.bandeauInfo {
+  display: flex;
+}
 
+/* index */
+
+/* #contenuAccueil {
+} */
+
+.bandeauPrincipal {
+  display: flex;
+  background-image: url(../img/hero-grande-galerie.webp);
+  height: 440px;
+  align-items:center;
+  color: white;
+}
+
+.bandeauPrincipal>div {
+  padding: 50px;
+}
+
+.aLAffiche {
+  padding: 50px;
+}
+
+.aLAffiche .card {
+  padding: 0;
+}
+
+
+
+/* Pied de page */
 footer{
   background: var(--mv-encre);
   color: white;
@@ -132,8 +164,6 @@ footer ul {
 /* .colonnesFooter .colonne>img,h3{
   margin-bottom: 30px;
 } */
-
-
 
 .basDePage {
   display: flex;
