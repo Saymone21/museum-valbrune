@@ -19,23 +19,23 @@
 <body>
      <header class="header sticky-top"><!-- En-tête et navigation -->
     
-    <nav class="menu">
+        <nav class="menu container-fluid ps-0 pe-5">
       <div class="navbar navbar-expand-sm bg-white navbar-light">
-        <div class="conteneurLogo">
+        <div class="conteneurLogo col-5 ps-5 py-3 text-start" >
           <a class="navbar-brand" href="index.html"><img src="assets/img/logo-museum-valbrune.svg" alt="Logo du Muséum de Valbrune"></a>
         </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-          <ul class="navbar-nav">
+        <div class="collapse navbar-collapse col-7 text-end  py-3" id="collapsibleNavbar">
+          <ul class="navbar-nav ms-auto">
             <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
             <li class="nav-item"><a class="nav-link" href="le-museum.html">Le Muséum</a></li>
             <li class="nav-item"><a class="nav-link" href="expositions.html">Expositions</a></li>
             <li class="nav-item"><a class="nav-link" href="agenda.html">Agenda</a></li>
-            <li class="nav-item"><a class="nav-link" href="infos-pratiques.html">Infos pratiques</a></li>
+            <li class="nav-item"><a class="nav-link active" href="infos-pratiques.html" aria-current="page">Infos pratiques</a></li>
             <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-            <li class="nav-item"><a class="nav-link" href="">Billeterie</a></li>
+            <li class="nav-item"><a class="nav-link" href="infos-pratiques.html#tarifs">Billeterie</a></li>
           </ul>
         </div>
       </div>
@@ -114,7 +114,7 @@ et 25 décembre.</i>
                 </tbody>
             </table>
         </div>
-        <div>
+        <div id="tarifs">
             <img src="assets/icones/billet.svg" alt="">
             <h2>Tarifs</h2>
             <table>
@@ -257,8 +257,8 @@ avec une exposition temporaire.</p>
 
 
 <footer> <!-- Pied de page -->
-   <div class="colonnesFooter">
-    <div>
+   <div class="colonnesFooter container-fluid row">
+    <div class="colonne col">
       <img src="assets/img/logo-museum-valbrune-blanc.svg" alt="Logo blanc du Muséum de Valbrune">
       <ul>
         <li>Muséum de Valbrune 4, quai des Tanneurs, 00000 Valbrune</li>
@@ -266,7 +266,7 @@ avec une exposition temporaire.</p>
         <li>contact@museum-valbrune.example</li>
       </ul>
     </div>
-    <div>
+    <div class="colonne col">
       <h3>Horaires</h3>
       <ul>
         <li>Mardi au vendredi : 10 h - 18 h</li>
@@ -274,26 +274,26 @@ avec une exposition temporaire.</p>
         <li>Fermé le lundi</li>
       </ul>
     </div>
-    <div>
+    <div class="colonne col">
       <div>
         <h3>Liens utiles</h3>
         <ul>
-          <li><a href="infos-pratiques.html">Infos pratiques</a></li>
+          <li><a href="#" aria-current="page">Infos pratiques</a></li>
           <li><a href="contact.html">Contact</a></li>
           <li><a href="mentions-legales.html">Mentions légales</a></li>
         </ul>
       </div>
-      <div class="reseauxSociaux">
-        <img src="" alt="Lien vers la page Facebook du Muséum de Valbrune">
-        <img src="" alt="Lien vers la page Instagram du Muséum de Valbrune">
-        <img src="" alt="Lien vers la chaine YouTube du Muséum de Valbrune">
+      <div class="reseauxSociaux row">
+        <img src="assets/icones/facebook.png" alt="Lien vers la page Facebook du Muséum de Valbrune" class="col-4">
+        <img src="assets/icones/instagram.png" alt="Lien vers la page Instagram du Muséum de Valbrune" class="col-4">
+        <img src="assets/icones/youtube.png" alt="Lien vers la chaine YouTube du Muséum de Valbrune" class="col-4">
       </div>
     </div>
   </div>
   <div class="basDePage">
     <p>©2026 Muséum de Valbrune, site d'exercice réalisé par Simon Bert.</p>
   </div>
-</footer>
+  </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>

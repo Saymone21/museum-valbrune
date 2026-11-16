@@ -89,10 +89,62 @@ h1, h2, h3, .h1, .h2, .h3 { font-family: "Fraunces", Georgia, serif; }
    3. Vos styles
    -------------------------------------------------------------------------- */
 
-header{
 
+header {
+background-color: white;
 }  
 
-footer{
-  
+header>nav>a {
+  color: var(--mv-encre);
 }
+
+header a.active {
+  text-decoration: underline;
+  color: var(--mv-encre);
+}
+
+
+footer{
+  background: var(--mv-encre);
+  color: white;
+  font-size: var(--bs-secondary-font-size);
+}  
+
+footer ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+.colonnesFooter {
+  padding: 60px;
+}
+
+.colonnesFooter .col ul:nth-child(2){
+  margin-top: 30px;
+}
+
+.reseauxSociaux{
+  margin-top: 30px;
+  height: auto;
+  width: 250px;
+}
+
+/* .colonnesFooter .colonne>img,h3{
+  margin-bottom: 30px;
+} */
+
+
+
+.basDePage {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  border-top: solid 1px white;
+  padding: 15px;
+}
+
+.basDePage p{
+  margin: 0px;
+}
+
