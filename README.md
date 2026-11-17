@@ -23,7 +23,7 @@ Projet de formation : intégration HTML5 / Bootstrap d'un site vitrine à partir
 
 | Tag | Date | État du projet à cette date |
 |-----|------|-----------------------------|
-| semaine-1 |  |  |
+| semaine-1 | 13/10/26 | structure des pages du site en html terminée (sauf page Agenda) |
 | semaine-2 |  |  |
 | semaine-3 (option) |  |  |
 
@@ -57,6 +57,10 @@ Pour lancer le projet :
 - Comment faire un fil d'ariane => solution trouvée sur doc officielle de Bootstrap
 - Comment faire un menu en accordéon (faq) => solution trouvée sur doc officielle de Bootstrap, complément nécessaire avec Gemini pour avoir les bons attributs de Bootstrap 5
 - Comment créer un blockquote => solution trouvée sur la doc HTML de developper.mozilla.org
+- Comment aligner à droite les liens du menu sur la page d'accueil => solution trouvée avec l'aide de Gemini : la classe .nav-collapse utilise flex-box et ne prend pas en compte "text-end", il faut ajouter la class "ms-auto" à la liste de liens
+- Comment rendre le lien du menu active => solution trouvée sur doc officielle de Bootstrap : ajouter la class "active au lien
+- Comment gérer l'espacement entre plusieurs div avec des goutières => solution trouvée dans le cours sur Bootstrap, complément nécessaire avec la doc officielle de Bootstrap et Gemini
+
 
 ## Sources consultées
 
@@ -72,3 +76,5 @@ Si vous n'en avez pas utilisé, écrivez "Aucun".
 
 - Utilisation de Google Gemini lors de la recherche web : Comment faire disparaitre le bandeau d'information au clic de la croix de fermeture sur la page d'accueil
 - Utilisation de Google Gemini pour la recherche web et l'aide avec le code : Comment faire un menu en accordéon avec Bootstrap (faq)
+- Utilisation de Google Gemini pour la recherche web et l'aide avec le code : Comment aligner à droite les liens du menu sur la page d'accueil
+- Utilisation de Google Gemini pour avoir une aide pour gérer les espacements entre plusieurs div avec des goutières

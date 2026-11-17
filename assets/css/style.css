@@ -61,6 +61,34 @@
 }
 h1, h2, h3, .h1, .h2, .h3 { font-family: "Fraunces", Georgia, serif; }
 
+.texteSecondaire{
+  font-size: var(--bs-secondary-font-size);
+  color: var(--bs-secondary-color);
+  font-weight: 500;
+/*   text-transform: uppercase;
+ */
+
+}
+
+.lienEnSavoirPlus {
+  color: var(--mv-encre);
+}
+
+.lienEnSavoirPlus:hover {
+    color: red;
+  }
+
+.labelFormulaire{
+  font-weight: 600;
+}
+
+.champFormulaire {
+  margin: 10px 0px;
+  padding: 10px 0px;
+  border: 1px solid var(--mv-ardoise);
+  border-radius: 5px;
+}
+
 .btn-primary {
 --bs-btn-bg: var(--mv-lichen);
 --bs-btn-border-color: var(--mv-lichen);
@@ -69,20 +97,37 @@ h1, h2, h3, .h1, .h2, .h3 { font-family: "Fraunces", Georgia, serif; }
 --bs-btn-active-bg: var(--mv-lichen-fonce);
 --bs-btn-active-border-color: var(--mv-lichen-fonce);
 --bs-btn-border-radius: 8px;
-
+  padding: 10px 0px;
 }
 
 .btn-secondary {
 --bs-btn-secondary-bg: white;
 --bs-btn-secondary-color: var(--mv-encre);
 --bs-btn-secondary-border-color: var(--mv-encre);
+  padding: 10px 0px;
 }
 
+.btn-primary a, .btn-secondary a {
+    text-decoration: none;
+}
+
+
 .btn-badge{
-  border-radius: 50px;
+  border-radius: 100px;
+  border: 1px solid var(--mv-ardoise);
   padding: 5px;
   background-color: var(--mv-ocre);
   color: var(--mv-encre);
+  margin: 10px 0px;
+}
+
+.entete {
+  background-color: var(--mv-craie);
+  padding: 30px;
+}
+
+.filAriane{
+  padding-left: 30px;
 }
 
 /* --------------------------------------------------------------------------
@@ -110,9 +155,6 @@ header a.active {
 
 /* index */
 
-/* #contenuAccueil {
-} */
-
 .bandeauPrincipal {
   display: flex;
   background-image: url(../img/hero-grande-galerie.webp);
@@ -120,18 +162,115 @@ header a.active {
   align-items:center;
   color: white;
 }
-
 .bandeauPrincipal>div {
   padding: 50px;
+}
+
+.conteneurBoutons {
+
 }
 
 .aLAffiche {
   padding: 50px;
 }
-
 .aLAffiche .card {
   padding: 0;
 }
+
+.chiffresClef {
+  text-align: center;
+  background-color: var(--mv-encre);
+  color: white;
+  padding: 40px 0px 10px 0px;
+}
+.chiffresClef .row{
+  margin: 30px;
+}
+.chiffreClef {
+  font-size: 3rem;
+  color:var(--mv-ocre);
+}
+
+.actualites {
+  padding: 40px;
+}
+.actus {
+  padding: 30px 30px 0px 0px ;
+}
+.actus li {
+  border: none;
+  border-bottom: 1px solid var(--mv-ardoise);
+}
+.actus .list-group-item {
+  border-radius: 0px;
+}
+
+.lettreMuseum {
+  background-color: var(--mv-craie);
+  border-radius: 10px;
+  border: 1px solid var(--mv-ardoise);
+  padding: 20px;
+}
+.lettreMuseum input,button {
+  width: 100%;
+  margin: 10px 0px;
+}
+
+
+.prepareVisite {
+  background-color: var(--mv-craie);
+  text-align: center;
+  padding: 40px;
+}
+
+.infoVisite {
+  margin-top: 40px ;
+}
+
+/* Page Contact */
+
+.encrivezNous {
+  padding: 40px;
+}
+
+.champContact {
+  border-radius: 5px;
+  border: 1px solid var(--mv-ardoise);
+  padding: 5px 0px;
+  margin-bottom: 5px;
+}
+
+.nousTrouver {
+  background-color: var(--mv-craie);
+  border-radius: 10px;
+  border: 1px solid var(--mv-ardoise);
+  padding: 20px;
+}
+
+.nousTrouver li,ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+.nousTrouver img{
+  padding-right: 10px;
+}
+
+/* Page Mentions Légales*/
+
+.mentionsLegales {
+  padding: 40px;
+}
+
+.mentionsLegales h1 {
+  padding-bottom: 20px;
+}
+
+.mentionsLegales li{
+  list-style-type: none;
+  padding: 10px 0px;
+}
+
 
 
 
