@@ -67,120 +67,135 @@
         </ul>
     </nav>
     
-    <section class="horaires">
-        <div id="horaires">
-            <img src="assets/icones/horloge.svg" alt="">
-            <h2>Horaires</h2>
-            <table>
-                <thead>
-                    <th>Jour</th>
-                    <th>Horaires</th>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Lundi</td>
-                        <td><b>Fermé</b></td>
-                    </tr>
-                    <tr>
-                        <td>Mardi</td>
-                        <td>10 h - 18 h</td>
-                    </tr>
-                    <tr>
-                        <td>Mercredi</td>
-                        <td>10 h - 18 h</td>
-                    </tr>
-                    <tr>
-                        <td>Jeudi</td>
-                        <td>10 h - 18 h</td>
-                    </tr>
-                    <tr>
-                        <td>Vendredi</td>
-                        <td>10 h - 18 h</td>
-                    </tr>
-                    <tr>
-                        <td>Samedi</td>
-                        <td>10 h - 19 h</td>
-                    </tr>
-                    <tr>
-                        <td>Dimanche</td>
-                        <td>10 h - 19 h</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <i>Dernière entrée 45 minutes avant la fermeture. Fermé les 1er janvier, 1er mai
-et 25 décembre.</i>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div id="tarifs">
-            <img src="assets/icones/billet.svg" alt="">
-            <h2>Tarifs</h2>
-            <table>
-                <thead>
-                    <th>Catégorie</th>
-                    <th>Tarif</th>
-                    <th>Conditions</th>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Plein tarif</td>
-                        <td>9 €</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Tarif réduit</td>
-                        <td>6 €</td>
-                        <td>12-17 ans, étudiants, demandeurs d'emploi, sur justificatif</td>
-                    </tr>
-                    <tr>
-                        <td>Moins de 12 ans</td>
-                        <td>Gratuit</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Tarif Famille</td>
-                        <td>20€</td>
-                        <td>2 adultes et jusqu'à 3 jeunes de 12 à 17ans</td>
-                    </tr>
-                    <tr>
-                        <td>Groupes</td>
-                        <td>5€ par personne</td>
-                        <td>Sur réservation</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <i>Le billet donne accès à toutes les expositions, permanentes et temporaires.</i>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </section>
-    <section class="acces">
-        <div id="acces">
-            <img src="assets/icones/plan.svg" alt="">
-            <h2>Accès</h2>
-            <h3>Adresse</h3>
-            <p>Muséum de Valbrune,<br>
-            4, quai des Tanneurs,<br>
-            00000 Valbrune</p>
-            <h3>Transport</h3>
-            <p>En tram : ligne B, arrêt Quai des Tanneurs. En bus : lignes 12 et 27, arrêt Halle
-aux draps. À vélo : arceaux devant l'entrée principale. En voiture : parking
-Saint-Roch (payant) à 300 m.</p>
-            <h3>A pied</h3>
-            <p>Depuis la gare, comptez douze minutes à pied, vingt si vous vous arrêtez
-devant la vitrine du chocolatier.</p>
-        </div>
-        <div>
-            <img src="assets/img/plan-acces.webp" alt="Plan d'accès au Muséum">
+    <section class="horairesTarifs container-fluid">
+        <div class="row gx-5">
+            <div class="col-5" id="horaires">
+                <div class="titreTableau">
+                    <img src="assets/icones/horloge.svg" alt="">
+                    <h2>Horaires</h2>
+                </div>
+                <table>
+                    <thead>
+                        <th>Jour</th>
+                        <th>Horaires</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lundi</td>
+                            <td><b>Fermé</b></td>
+                        </tr>
+                        <tr>
+                            <td>Mardi</td>
+                            <td>10 h - 18 h</td>
+                        </tr>
+                        <tr>
+                            <td>Mercredi</td>
+                            <td>10 h - 18 h</td>
+                        </tr>
+                        <tr>
+                            <td>Jeudi</td>
+                            <td>10 h - 18 h</td>
+                        </tr>
+                        <tr>
+                            <td>Vendredi</td>
+                            <td>10 h - 18 h</td>
+                        </tr>
+                        <tr>
+                            <td>Samedi</td>
+                            <td>10 h - 19 h</td>
+                        </tr>
+                        <tr>
+                            <td>Dimanche</td>
+                            <td>10 h - 19 h</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <i>Dernière entrée 45 minutes avant la fermeture. Fermé les 1er janvier, 1er mai
+    et 25 décembre.</i>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-7" id="tarifs">
+                <div class="titreTableau">
+                    <img src="assets/icones/billet.svg" alt="">
+                    <h2>Tarifs</h2>
+                </div>
+                <table>
+                    <thead>
+                        <th>Catégorie</th>
+                        <th>Tarif</th>
+                        <th>Conditions</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Plein tarif</td>
+                            <td>9 €</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Tarif réduit</td>
+                            <td>6 €</td>
+                            <td>12-17 ans, étudiants, demandeurs d'emploi, sur justificatif</td>
+                        </tr>
+                        <tr>
+                            <td>Moins de 12 ans</td>
+                            <td>Gratuit</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Tarif Famille</td>
+                            <td>20€</td>
+                            <td>2 adultes et jusqu'à 3 jeunes de 12 à 17ans</td>
+                        </tr>
+                        <tr>
+                            <td>Groupes</td>
+                            <td>5€ par personne</td>
+                            <td>Sur réservation</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <i>Le billet donne accès à toutes les expositions, permanentes et temporaires.</i>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </section>
+    <section class="acces container-fluid">
+        <div class="row gx-5">
+            <div class="accesTexte col-6" id="acces">
+                <div class="titreTableau">
+                    <img src="assets/icones/plan.svg" alt="">
+                    <h2>Accès</h2>
+                </div>
+                <div>
+                    <h3>Adresse</h3>
+                    <p>Muséum de Valbrune,<br>
+                    4, quai des Tanneurs,<br>
+                    00000 Valbrune</p>
+                    <h3>Transport</h3>
+                    <p>En tram : ligne B, arrêt Quai des Tanneurs. En bus : lignes 12 et 27, arrêt Halle
+        aux draps. À vélo : arceaux devant l'entrée principale. En voiture : parking
+        Saint-Roch (payant) à 300 m.</p>
+                    <h3>A pied</h3>
+                    <p>Depuis la gare, comptez douze minutes à pied, vingt si vous vous arrêtez
+        devant la vitrine du chocolatier.</p>
+                </div>
+            </div>
+            <div class="accesImage col-6">
+                <img src="assets/img/plan-acces.webp" alt="Plan d'accès au Muséum">
+            </div>
+        </div>
+    </section>
+
     <section class="accessibilite" id="accessibilite">
-        <img src="assets/icones/accessibilite.svg" alt="">
-        <h2>Accessibilité</h2>
+        <div class="titreTableau">
+            <img src="assets/icones/accessibilite.svg" alt="">
+            <h2>Accessibilité</h2>   
+        </div>
         <p>Le Muséum est entièrement accessible aux personnes à mobilité réduite
 (ascenseurs et rampes).</p>
         <ul>
@@ -202,6 +217,7 @@ française (LSF).</li>
                         <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1" >Peut-on prendre des
 photos ?</button>
                     </h4>
+                    <img src="assets/icones/plan.svg" alt="">
                 </div>
                 <div id="collapse1" class="collapse" aria-labelledby="question1" data-bs-parent="#accordeon">
                     <div class="card-body">
@@ -215,11 +231,11 @@ temporaires.</p>
                     <h4 class="mb-0">
                     <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">Y a-t-il un vestiaire ?</button>
                     </h4>
+                    <img src="assets/icones/plan.svg" alt="">
                 </div>
                 <div id="collapse2" class="collapse" aria-labelledby="question2" data-bs-parent="#accordeon">
                     <div class="card-body">
-                        <p>Oui, un vestiaire gratuit est à votre disposition à l'accueil. Les valises ne sont
-pas acceptées.</p>
+                        <p>Oui, un vestiaire gratuit est à votre disposition à l'accueil. Les valises ne sont pas acceptées.</p>
                     </div>
                 </div>
             </div>
@@ -227,26 +243,25 @@ pas acceptées.</p>
                 <div class="card-header" id="question3">
                     <h4 class="mb-0">
                         <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3" >Peut-on pique-niquer ?</button>
+                        <img src="assets/icones/plan.svg" alt="">
                     </h4>
                 </div>
                 <div id="collapse3" class="collapse" aria-labelledby="question3" data-bs-parent="#accordeon">
                     <div class="card-body">
-                        <p>Une salle hors-sac est réservée aux groupes scolaires en semaine ; le weekend,
-elle est ouverte à tous.</p>
+                        <p>Une salle hors-sac est réservée aux groupes scolaires en semaine ; le weekend, elle est ouverte à tous.</p>
                     </div>
                 </div>
             </div>
             <div class="card">
                 <div class="card-header" id="question4">
                     <h4 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">Combien de temps
-prévoir ?</button>
+                        <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">Combien de temps prévoir ?</button>
                     </h4>
+                    <img src="assets/icones/plan.svg" alt="">                    
                 </div>
                 <div id="collapse4" class="collapse" aria-labelledby="question4" data-bs-parent="#accordeon">
                     <div class="card-body">
-                        <p>Comptez deux heures pour les expositions permanentes, une heure de plus
-avec une exposition temporaire.</p>
+                        <p>Comptez deux heures pour les expositions permanentes, une heure de plus avec une exposition temporaire.</p>
                     </div>
                 </div>
             </div>

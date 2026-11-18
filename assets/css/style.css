@@ -166,9 +166,6 @@ header a.active {
   padding: 50px;
 }
 
-.conteneurBoutons {
-
-}
 
 .aLAffiche {
   padding: 50px;
@@ -227,6 +224,78 @@ header a.active {
   margin-top: 40px ;
 }
 
+
+/* Page Infos Pratiques */
+
+.sommairePage li {
+  display: inline-block;
+  list-style-type: none;
+  margin: 10px 10px 10px 0px;
+  font-weight: 600;
+}
+
+.titreTableau {
+  display: flex;
+  padding: 10px 0px;
+}
+
+.titreTableau h2{
+  margin: 0px;
+  padding-left: 10px;
+}
+
+.horairesTarifs {
+  padding: 0px 30px;
+}
+
+table {
+  width: 100%;
+}
+
+thead {
+  background-color: var(--mv-craie);
+  padding: 10px 0px;
+}
+
+td,th {
+  padding: 10px;
+  border-bottom: 1px solid var(--mv-ardoise);
+}
+
+tr:last-child>td {
+  border-style: none;
+  color: var(--mv-ardoise);
+  padding: 10px 0px;
+}
+
+.acces {
+  padding: 30px;
+}
+
+.accesTexte {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px 0px;
+  padding: 30px;
+}
+
+.accesImage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.accesImage img {
+  max-width: 100%;
+  max-height: auto;
+}
+
+.accessibilite {
+  padding: 30px;
+  background-color: var(--mv-craie);
+}
+
 /* Page Contact */
 
 .encrivezNous {
@@ -247,13 +316,30 @@ header a.active {
   padding: 20px;
 }
 
-.nousTrouver li,ul {
+.nousTrouver ul {
   list-style-type: none;
   padding: 0px;
 }
 
 .nousTrouver img{
-  padding-right: 10px;
+  padding: 10px 10px 10px 10px;
+}
+
+.nousTrouver li {
+  display: flex;
+  align-items: center;
+}
+
+.suivezNous{
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid;
+  border-radius: 10px;
+}
+
+.suivezNous img {
+  margin: 10px;
+  max-height: 80px;
 }
 
 /* Page Mentions Légales*/
@@ -270,8 +356,6 @@ header a.active {
   list-style-type: none;
   padding: 10px 0px;
 }
-
-
 
 
 /* Pied de page */
