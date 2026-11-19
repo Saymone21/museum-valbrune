@@ -296,6 +296,41 @@ tr:last-child>td {
   background-color: var(--mv-craie);
 }
 
+.faq {
+ padding: 30px;
+}
+
+.card {
+  margin: 10px;
+}
+.card-header {
+  background-color: white;
+  padding: 0;
+}
+
+.card-header h3{
+  font-size: var(--bs-body-font-size);
+  padding: 0;
+}
+
+.card-header .accordion-button {
+  padding: 10px 20px;
+}
+
+.card-body p{
+  margin: 10px;
+}
+
+.faq .accordion-button, .faq .accordion-button:not(.collapsed) {
+  background-color: white;
+  box-shadow: none;
+}
+
+.faq button:focus-visible {
+    outline: 1px solid var(--mv-ardoise);
+}
+
+
 /* Page Contact */
 
 .encrivezNous {
