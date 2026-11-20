@@ -97,28 +97,32 @@ h1, h2, h3, .h1, .h2, .h3 { font-family: "Fraunces", Georgia, serif; }
 --bs-btn-active-bg: var(--mv-lichen-fonce);
 --bs-btn-active-border-color: var(--mv-lichen-fonce);
 --bs-btn-border-radius: 8px;
-  padding: 10px 0px;
+  padding: 10px 20px;
 }
 
 .btn-secondary {
---bs-btn-secondary-bg: white;
---bs-btn-secondary-color: var(--mv-encre);
---bs-btn-secondary-border-color: var(--mv-encre);
-  padding: 10px 0px;
+--bs-btn-bg: white;
+--bs-btn-color: var(--mv-encre);
+--bs-btn-border-color: var(--mv-encre);
+  padding: 10px 20px;
 }
 
 .btn-primary a, .btn-secondary a {
     text-decoration: none;
 }
 
+.btn-primary a:hover, .btn-secondary a:hover{
+  color: white;
+}
 
 .btn-badge{
   border-radius: 100px;
   border: 1px solid var(--mv-ardoise);
-  padding: 5px;
   background-color: var(--mv-ocre);
   color: var(--mv-encre);
-  margin: 10px 0px;
+  margin: 5px 0px;
+  min-width: 120px;
+
 }
 
 .entete {
@@ -153,7 +157,7 @@ header a.active {
   display: flex;
 }
 
-/* index */
+/* Page Index */
 
 .bandeauPrincipal {
   display: flex;
@@ -165,7 +169,6 @@ header a.active {
 .bandeauPrincipal>div {
   padding: 50px;
 }
-
 
 .aLAffiche {
   padding: 50px;
@@ -213,7 +216,6 @@ header a.active {
   margin: 10px 0px;
 }
 
-
 .prepareVisite {
   background-color: var(--mv-craie);
   text-align: center;
@@ -224,6 +226,114 @@ header a.active {
   margin-top: 40px ;
 }
 
+
+/* Page Le Museum */
+
+
+.histoire {
+  padding: 50px 30px;
+}
+
+.histoireDescriptif {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px 0px;
+  padding: 30px;
+}
+
+.histoireImage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+} 
+
+.reperes {
+  padding: 30px;
+}
+
+.repere {
+  border: 1px solid var(--mv-ardoise);
+  border-radius: 10px;
+  padding: 20px;
+  height: 200px;
+}
+
+.mission {
+  padding: 30px;
+  background-color: var(--mv-craie);
+}
+
+.mission hr {
+  height: 3px;
+  background-color: var(--mv-ardoise);
+}
+
+.motDirection {
+  padding: 30px;
+}
+
+.motDirection .row {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.motDirection .row>img {
+  max-height: 250px;
+  width:auto;
+}
+
+.motDirection figure img{
+  max-height: 30px;
+}
+
+.motDirection figure {
+  border-left: 3px solid var(--mv-ardoise);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Page Expositions */
+
+.sommairePage{
+  padding: 10px 0px;
+}
+
+.sommairePage ul {
+  margin: 0;
+}
+
+.expoPermanentes, .expoTemporaires {
+  padding: 10px 0px 0px 30px;
+}
+
+.expoPermanentes .btn-badge, .expoTemporaires .btn-badge {
+  width: 25%;
+}
+
+.expoPermanentes .card {
+  margin: 30px 0px;
+}
+
+.expoPermanentes .card-title,.expoPermanentes .card-text, .expoTemporaires .card-title,.expoTemporaires .card-text{
+  margin: 5px 0px;
+}
+
+.expoTemporaires {
+  padding: 0px 30px 30px 30px;
+}
+
+.expoTemporaires .card {
+  margin: 20px 0px;
+}
+
+.visiteGroupe {
+  background-color: var(--mv-craie);
+  padding: 30px;
+}
 
 /* Page Infos Pratiques */
 
@@ -269,7 +379,7 @@ tr:last-child>td {
 }
 
 .acces {
-  padding: 30px;
+  padding: 50px 30px;
 }
 
 .accesTexte {

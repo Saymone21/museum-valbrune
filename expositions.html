@@ -57,17 +57,20 @@
 
     <nav class="sommairePage">
         <ul>
-            <li><button class="btn-badge"><a href="#permanentes">Permanentes</a></button></li>
-            <li><button class="btn-badge"><a href="#temporaires">Temporaires</a></button></li>
+            <li><button class="btn btn-primary"><a href="#permanentes">Permanentes</a></button></li>
+            <li><button class="btn btn-secondary"><a href="#temporaires">Temporaires</a></button></li>
         </ul>
     </nav>
     
-    <section id="permanentes">
+    <section class="expoPermanentes container-fluid" id="permanentes">
         <h2>Expositions permanentes</h2>
-        <div>
-            <div class="card">                 
-                <img class="card-img-top" src="assets/img/expo-geants-jurassique.webp" alt="Exposition sur les géants du Jurassique">
-                <div class="card-body">
+        <div class="col gy-5">
+            <div class="card row-4">
+              <div class="row">               
+                <div class="col-4">
+                  <img class="card-img-top" src="assets/img/expo-geants-jurassique.webp" alt="Exposition sur les géants du Jurassique">
+                </div>
+                <div class="card-body col-8">
                     <button class="btn-badge">Permanente</button>
                     <div class="card-title h3">Les Géants du Jurassique</div>
                     <div class="card-subtitle">GRANDE GALERIE</div>
@@ -76,10 +79,14 @@
                     pas aux dernières extinctions. Une table tactile permet de manipuler des
                     reproductions de fossiles.</p>
                 </div>
+              </div>  
             </div>
-            <div class="card">                 
-                <img class="card-img-top" src="assets/img/expo-forets-ici.webp" alt="Exposition sur les êtres vivants des forêts de la région">
-                <div class="card-body">
+            <div class="card row-4">
+              <div class="row">
+                <div class="col-4">               
+                  <img class="card-img-top" src="assets/img/expo-forets-ici.webp" alt="Exposition sur les êtres vivants des forêts de la région">
+                </div> 
+                <div class="card-body col-8">
                     <button class="btn-badge">Permanente</button>
                     <div class="card-title h3">Forêts d'ici</div>
                     <div class="card-subtitle">SALLE 2</div>
@@ -87,10 +94,14 @@
                     plongée dans les forêts de la région, au fil des saisons. Ambiance sonore
                     enregistrée sur place.</p>
                 </div>
+              </div> 
             </div>
-            <div class="card">                 
-                <img class="card-img-top" src="assets/img/expo-cabinet-curiosites.webp" alt="Exposition sur le cabinet des curiosités">
-                <div class="card-body">
+            <div class="card row-4">
+              <div class="row">
+                <div class="col-4">               
+                  <img class="card-img-top" src="assets/img/expo-cabinet-curiosites.webp" alt="Exposition sur le cabinet des curiosités">
+                </div>  
+                <div class="card-body col-8">
                     <button class="btn-badge">Permanente</button>
                     <div class="card-title h3">Le Cabinet des curiosités</div>
                     <div class="card-subtitle">SALLE 3</div>
@@ -98,13 +109,15 @@
                     coquillages rares, animaux naturalisés et objets étranges, avec leurs vraies et
                     leurs fausses histoires.</p>
                 </div>
+              </div>
             </div>            
         </div>
     </section>
 
-    <section id="temporaires">
+    <section class="expoTemporaires container-fluid" id="temporaires">
         <h2>Expositions temporaires</h2>
-        <div>
+        <div class="row gx-5">
+          <div class="col-6">
             <div class="card">
                 <img class="card-img-top" src="assets/img/expo-lumieres-sous-sol.webp" alt="Exposition les lumières du sous-sol">
                 <div class="card-body">
@@ -114,29 +127,36 @@
                     SALLE DES MINERAUX</div>
                     <p class="card-text">Deux cents minéraux fluorescents révèlent leurs couleurs cachées
                     sous lumière ultraviolette. Un parcours dans le noir, accessible dès 6 ans.</p>
-                    <button>En savoir plus</button>
+                    <button class="btn btn-secondary">En savoir plus</button>
                 </div>
+              </div>
             </div>
-            <div class="card">
-                <img class="card-img-top" src="assets/img/expo-plumes-riviere.webp" alt="Exposition sur les Plumes de rivière">
-                <div class="card-body">
-                    <button class="btn-badge">Temporaire</button>
-                    <div class="card-title h3">Plumes de rivière</div>
-                    <div class="card-subtitle">DU 2 DECEMBRE 2026 AU 30 MAI 2027 <br>
-                    GALERIE HAUTE</div>
-                    <p class="card-text">Une exposition à écouter autant qu'à regarder : chants, cris et battements d'ailes des oiseaux de nos rivières, enregistrés au fil d'une année.</p>
-                    <button>En savoir plus</button>
-                </div>
+            <div class="col-6">
+              <div class="card">
+                  <img class="card-img-top" src="assets/img/expo-plumes-riviere.webp" alt="Exposition sur les Plumes de rivière">
+                  <div class="card-body">
+                      <button class="btn-badge">Temporaire</button>
+                      <div class="card-title h3">Plumes de rivière</div>
+                      <div class="card-subtitle">DU 2 DECEMBRE 2026 AU 30 MAI 2027 <br>
+                      GALERIE HAUTE</div>
+                      <p class="card-text">Une exposition à écouter autant qu'à regarder : chants, cris et battements d'ailes des oiseaux de nos rivières, enregistrés au fil d'une année.</p>
+                      <button class="btn btn-secondary">En savoir plus</button>
+                  </div>
+              </div>
             </div>
         </div>
     </section>
     
-    <section>
-        <h3>Vous venez en groupe ?</h3>
-        <div>
-           <p>Vous venez en groupe ? Les visites guidées se réservent au moins trois semaines à l'avance.</p>
-           <button>Nous contacter</button> 
+    <section class="visiteGroupe container-fluid">
+      <div class="row">
+        <div class="col-9">
+          <h3>Vous venez en groupe ?</h3>
+          <p>Vous venez en groupe ? Les visites guidées se réservent au moins trois semaines à l'avance.</p>
         </div>
+        <div class="col-3">
+           <button class="btn btn-primary">Nous contacter</button> 
+        </div>
+      </div>
     </section>
 
   </main>

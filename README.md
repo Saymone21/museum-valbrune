@@ -60,6 +60,9 @@ Pour lancer le projet :
 - Comment aligner à droite les liens du menu sur la page d'accueil => solution trouvée avec l'aide de Gemini : la classe .nav-collapse utilise flex-box et ne prend pas en compte "text-end", il faut ajouter la class "ms-auto" à la liste de liens
 - Comment rendre le lien du menu active => solution trouvée sur doc officielle de Bootstrap : ajouter la class "active au lien
 - Comment gérer l'espacement entre plusieurs div avec des goutières => solution trouvée dans le cours sur Bootstrap, complément nécessaire avec la doc officielle de Bootstrap et Gemini
+- Comment mettre en forme proprement l'accordéon de la faq => solution trouvée sur doc officielle de Bootstrap, complément nécessaire avec Gemini pour l'intégration
+- Comment styliser blockquote avec bootstrap => solution trouvée sur doc officielle de Bootstrap
+- Comment gére les espacements entre les differentes cartes de la page Exposition avec gx => solution trouvée sur doc officielle de Bootstrap, complément nécessaire avec Gemini pour l'intégration
 
 
 ## Sources consultées
