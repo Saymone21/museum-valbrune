@@ -142,6 +142,7 @@ h1, h2, h3, .h1, .h2, .h3 { font-family: "Fraunces", Georgia, serif; }
 /* En-tête */
 header {
 background-color: white;
+border-radius: 0px 0px 10px 10px;
 }  
 
 header>nav>a {
@@ -151,6 +152,28 @@ header>nav>a {
 header a.active {
   text-decoration: underline;
   color: var(--mv-encre);
+}
+
+/* Menu Burger */
+.navbar-collapse li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav.menu:has(.navbar-collapse.show), nav.menu:has(.navbar-collapse.collapsing) {
+  background-color: var(--mv-craie);
+}
+
+.navbar-collapse.show .nav-item,.navbar-collapse.collapsing .nav-item {
+  padding: 10px 0px;
+  border-bottom: 1px solid var(--mv-ardoise);
+  justify-content: start;
+}
+
+.navbar-collapse.show li:last-child,.navbar-collapse.collapsing li:last-child {
+  width: 30%;
+  justify-content: start;
 }
 
 .bandeauInfo {
@@ -200,6 +223,7 @@ header a.active {
 .actus li {
   border: none;
   border-bottom: 1px solid var(--mv-ardoise);
+  padding: 10px 0px;
 }
 .actus .list-group-item {
   border-radius: 0px;
@@ -222,8 +246,8 @@ header a.active {
   padding: 40px;
 }
 
-.infoVisite {
-  margin-top: 40px ;
+.blocInfoVisite {
+  padding: 20px 0px;
 }
 
 
@@ -519,8 +543,8 @@ footer ul {
   padding: 60px;
 }
 
-.colonnesFooter .col ul:nth-child(2){
-  margin-top: 30px;
+.colonnesFooter ul:nth-child(2){
+  margin-top: 10px;
 }
 
 .reseauxSociaux{
@@ -528,10 +552,6 @@ footer ul {
   height: auto;
   width: 250px;
 }
-
-/* .colonnesFooter .colonne>img,h3{
-  margin-bottom: 30px;
-} */
 
 .basDePage {
   display: flex;

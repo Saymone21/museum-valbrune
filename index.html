@@ -18,15 +18,15 @@
 
   <header class="header sticky-top container-fluid px-0"><!-- En-tête et navigation -->
     
-    <nav class="menu container-fluid ps-0 pe-5">
-      <div class="navbar navbar-expand-sm bg-white navbar-light">
-        <div class="conteneurLogo col-5 ps-5 py-3 text-start" >
+    <nav class="menu container-fluid px-5 py-3">
+      <div class="navbar navbar-expand-lg row navbar-light">
+        <div class="conteneurLogo col-5 text-start" >
           <a class="navbar-brand" href="index.html"><img src="assets/img/logo-museum-valbrune.svg" alt="Logo du Muséum de Valbrune"></a>
         </div>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <button class="navbar-toggler col-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse col-7 text-end  py-3" id="collapsibleNavbar">
+        <div class="collapse navbar-collapse col-lg-7" id="collapsibleNavbar">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item"><a class="nav-link active" href="#" aria-current="page">Accueil</a></li>
             <li class="nav-item"><a class="nav-link" href="le-museum.html">Le Muséum</a></li>
@@ -34,7 +34,7 @@
             <li class="nav-item"><a class="nav-link" href="agenda.html">Agenda</a></li>
             <li class="nav-item"><a class="nav-link" href="infos-pratiques.html">Infos pratiques</a></li>
             <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-            <li class="nav-item"><a class="nav-link" href="infos-pratiques.html#tarifs">Billeterie</a></li>
+            <li><a  href="infos-pratiques.html#tarifs"><button class="btn btn-primary">Billeterie</button></a></li>
           </ul>
         </div>
       </div>
@@ -50,15 +50,15 @@
 
   <main id="contenuAccueil"><!-- Contenu principal de la page -->
     <section class="bandeauPrincipal">
-      <div class="col-6">
+      <div class="col-md-8">
         <h1>Le Muséum de Valbrune</h1>
         <p>Des cailloux, des plumes et beaucoup de questions : depuis 1868, le Muséum les rassemble sous un même toit.</p>
         <div class="conteneurBoutons container-fluid p-0">
           <div class="row">
-            <div class="col-4">
+            <div class="col-6 col-md-4">
               <button class="btn btn-primary"><a href="infos-pratiques.html">Préparer ma visite</a></button>
             </div>
-            <div class="col-4">
+            <div class="col-6 col-md-4">
             <button class="btn btn-secondary"><a href="expositions.html">Voir les expositions</a></button>
             </div>
           </div>
@@ -70,7 +70,7 @@
       <h2>A l'affiche</h2>
       <p>Trois bonnes raisons de pousser la porte cet hiver.</p>
       <div class="row gx-4">
-        <div class="col-4">
+        <div class="col-md-6 col-lg-4">
           <div class="card">
             <img class="card-img-top" src="assets/img/expo-geants-jurassique.webp" alt="Exposition sur les géants du Jurassique">
             <div class="card-body">
@@ -82,7 +82,7 @@
             </div>
           </div>
         </div>
-        <div class="col-4">
+        <div class="col-md-6 col-lg-4">
           <div class="card">
             <img class="card-img-top" src="assets/img/expo-lumieres-sous-sol.webp" alt="Exposition les lumières du sous-sol">
             <div class="card-body">
@@ -94,7 +94,7 @@
             </div>
           </div>
         </div>
-        <div class="col-4">
+        <div class="col-md-6 col-lg-4">
           <div class="card">
             <img class="card-img-top" src="assets/img/expo-plumes-riviere.webp" alt="Exposition sur les Plumes de rivière">
             <div class="card-body">
@@ -112,19 +112,19 @@
     <section class="chiffresClef container-fluid">
       <h2>Le Muséum en chiffres</h2>
       <div class="row">
-        <div class="col-3">
+        <div class="col-6 col-lg-3 m-auto">
           <span class="chiffreClef">48 000</span>
           <p>Spécimens conservés</p>
         </div>
-        <div class="col-3">
+        <div class="col-6 col-lg-3 m-auto">
           <span class="chiffreClef">158</span>
           <p>Ans d'histoire</p>
         </div>
-        <div class="col-3">
+        <div class="col-6 col-lg-3 m-auto">
           <span class="chiffreClef">62 000</span>
           <p>Visiteurs en 2025</p>
         </div>
-        <div class="col-3">
+        <div class="col-6 col-lg-3 m-auto">
           <span class="chiffreClef">340</span>
           <p>Ateliers et visites par an</p>
         </div>
@@ -133,7 +133,7 @@
 
     <section class="actualites container-fluid">
       <div class="row">
-        <div class="blocActu col-8">
+        <div class="blocActu col-lg-8">
           <h2>Actualités</h2>
           <div class="actus">
             <ul class="list-group">
@@ -155,7 +155,7 @@
             </ul>
           </div>
         </div>
-        <div class="lettreMuseum col-4">
+        <div class="lettreMuseum col-lg-4">
           <form action="post">
             <fieldset>
             <h2>La lettre du Muséum</h2>
@@ -173,19 +173,19 @@
     <section class="prepareVisite container-fluid">
       <h2>Préparer sa visite</h2>
       <div class="infoVisite row">
-        <div class="blocInfoVisite col-4">
+        <div class="blocInfoVisite col-md-4">
           <img src="assets/icones/horloge.svg" alt="">
           <h3>Horaires</h3>
           <p>Du mardi au dimanche, dès 10 h.</p>
           <a href="infos-pratiques.html#horaires" class="lienEnSavoirPlus">Voir les horaires</a><span>-></span>
         </div>
-        <div class="blocInfoVisite col-4">
+        <div class="blocInfoVisite col-md-4">
           <img src="assets/icones/billet.svg" alt="">
           <h3>Tarifs</h3>
           <p>Gratuit pour les moins de 12 ans.</p>
           <a href="infos-pratiques.html#tarifs" class="lienEnSavoirPlus">Voir les tarifs</a><span>-></span>
         </div>
-        <div class="blocInfoVisite col-4">
+        <div class="blocInfoVisite col-md-4">
           <img src="assets/icones/plan.svg" alt="">
           <h3>Accès</h3>
           <p>Tram B, arrêt Quai des Tanneurs.</p>
@@ -198,8 +198,8 @@
   </main>
 
   <footer> <!-- Pied de page -->
-   <div class="colonnesFooter container-fluid row">
-    <div class="colonne col">
+   <div class="colonnesFooter container-fluid row gy-3">
+    <div class="colonne col-md-4">
       <img src="assets/img/logo-museum-valbrune-blanc.svg" alt="Logo blanc du Muséum de Valbrune">
       <ul>
         <li>Muséum de Valbrune 4, quai des Tanneurs, 00000 Valbrune</li>
@@ -207,7 +207,7 @@
         <li>contact@museum-valbrune.example</li>
       </ul>
     </div>
-    <div class="colonne col">
+    <div class="colonne col-md-4">
       <h3>Horaires</h3>
       <ul>
         <li>Mardi au vendredi : 10 h - 18 h</li>
@@ -215,7 +215,7 @@
         <li>Fermé le lundi</li>
       </ul>
     </div>
-    <div class="colonne col">
+    <div class="colonne col-md-4">
       <div>
         <h3>Liens utiles</h3>
         <ul>
