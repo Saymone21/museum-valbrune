@@ -56,10 +56,41 @@
 --bs-body-font-size: 1.0625rem; /* 17 px */
 --bs-body-color: var(--mv-encre);
 --bs-link-color-rgb: rgb(61,107,53);
---bs-secondary-font-size: 0,875rem;
+--bs-secondary-font-size: 0.875rem;
 --bs-secondary-color: var(--mv-ardoise);
+--header-height : 180px;
 }
-h1, h2, h3, .h1, .h2, .h3 { font-family: "Fraunces", Georgia, serif; }
+h1, h2, h3, .h1, .h2, .h3 { 
+  font-family: "Fraunces", Georgia, serif;
+  color: var(--mv-encre); 
+}
+
+h1 {
+  font-size: 3rem ;
+}
+
+h2 {
+  font-size: 2.125rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+p a {
+  color: var(--mv-lichen);
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2.25rem;
+  }
+}
+
+html {
+  scroll-padding-top: var(--header-height);
+}
 
 .texteSecondaire{
   font-size: var(--bs-secondary-font-size);
@@ -131,7 +162,8 @@ h1, h2, h3, .h1, .h2, .h3 { font-family: "Fraunces", Georgia, serif; }
 }
 
 .filAriane{
-  padding-left: 30px;
+  padding: 5px 30px;
+  border-top: 1px solid var(--mv-ardoise);
 }
 
 /* --------------------------------------------------------------------------
@@ -176,9 +208,6 @@ nav.menu:has(.navbar-collapse.show), nav.menu:has(.navbar-collapse.collapsing) {
   justify-content: start;
 }
 
-.bandeauInfo {
-  display: flex;
-}
 
 /* Page Index */
 
@@ -187,17 +216,25 @@ nav.menu:has(.navbar-collapse.show), nav.menu:has(.navbar-collapse.collapsing) {
   background-image: url(../img/hero-grande-galerie.webp);
   height: 440px;
   align-items:center;
-  color: white;
 }
+
+.bandeauPrincipal h1, .bandeauPrincipal p{
+    color: white;
+}
+
 .bandeauPrincipal>div {
   padding: 50px;
 }
 
 .aLAffiche {
-  padding: 50px;
+  padding: 30px;
 }
 .aLAffiche .card {
   padding: 0;
+}
+
+.aLAffiche .card-text {
+  margin: 0px;
 }
 
 .chiffresClef {
@@ -255,7 +292,7 @@ nav.menu:has(.navbar-collapse.show), nav.menu:has(.navbar-collapse.collapsing) {
 
 
 .histoire {
-  padding: 50px 30px;
+  padding: 30px;
 }
 
 .histoireDescriptif {
@@ -280,6 +317,7 @@ nav.menu:has(.navbar-collapse.show), nav.menu:has(.navbar-collapse.collapsing) {
   border: 1px solid var(--mv-ardoise);
   border-radius: 10px;
   padding: 20px;
+  margin-top: 20px;
   height: 200px;
 }
 
@@ -331,7 +369,7 @@ nav.menu:has(.navbar-collapse.show), nav.menu:has(.navbar-collapse.collapsing) {
 }
 
 .expoPermanentes, .expoTemporaires {
-  padding: 10px 0px 0px 30px;
+  padding: 10px 30px 0px 30px;
 }
 
 .expoPermanentes .btn-badge, .expoTemporaires .btn-badge {
@@ -403,7 +441,7 @@ tr:last-child>td {
 }
 
 .acces {
-  padding: 50px 30px;
+  padding: 30px;
 }
 
 .accesTexte {
@@ -531,7 +569,6 @@ tr:last-child>td {
 footer{
   background: var(--mv-encre);
   color: white;
-  font-size: var(--bs-secondary-font-size);
 }  
 
 footer ul {
@@ -541,6 +578,7 @@ footer ul {
 
 .colonnesFooter {
   padding: 60px;
+  margin: 0px;
 }
 
 .colonnesFooter ul:nth-child(2){

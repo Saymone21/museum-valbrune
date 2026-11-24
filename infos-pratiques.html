@@ -19,15 +19,15 @@
 <body>
      <header class="header sticky-top"><!-- En-tête et navigation -->
     
-        <nav class="menu container-fluid ps-0 pe-5">
-      <div class="navbar navbar-expand-sm bg-white navbar-light">
-        <div class="conteneurLogo col-5 ps-5 py-3 text-start" >
+    <nav class="menu container-fluid px-5 py-3">
+      <div class="navbar navbar-expand-lg row navbar-light">
+        <div class="conteneurLogo col-5 text-start" >
           <a class="navbar-brand" href="index.html"><img src="assets/img/logo-museum-valbrune.svg" alt="Logo du Muséum de Valbrune"></a>
         </div>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <button class="navbar-toggler col-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse col-7 text-end  py-3" id="collapsibleNavbar">
+        <div class="collapse navbar-collapse col-lg-7" id="collapsibleNavbar">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
             <li class="nav-item"><a class="nav-link" href="le-museum.html">Le Muséum</a></li>
@@ -35,7 +35,7 @@
             <li class="nav-item"><a class="nav-link" href="agenda.html">Agenda</a></li>
             <li class="nav-item"><a class="nav-link active" href="infos-pratiques.html" aria-current="page">Infos pratiques</a></li>
             <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-            <li class="nav-item"><a class="nav-link" href="infos-pratiques.html#tarifs">Billeterie</a></li>
+            <li><a  href="infos-pratiques.html#tarifs"><button class="btn btn-primary">Billeterie</button></a></li>
           </ul>
         </div>
       </div>
@@ -68,8 +68,8 @@
     </nav>
     
     <section class="horairesTarifs container-fluid">
-        <div class="row gx-5">
-            <div class="col-5" id="horaires">
+        <div class="row g-5">
+            <div class="col-lg-5" id="horaires">
                 <div class="titreTableau">
                     <img src="assets/icones/horloge.svg" alt="">
                     <h2>Horaires</h2>
@@ -117,7 +117,7 @@
                     </tbody>
                 </table>
             </div>
-            <div class="col-7" id="tarifs">
+            <div class="col-lg-7" id="tarifs">
                 <div class="titreTableau">
                     <img src="assets/icones/billet.svg" alt="">
                     <h2>Tarifs</h2>
@@ -166,7 +166,7 @@
     </section>
     <section class="acces container-fluid">
         <div class="row gx-5">
-            <div class="accesTexte col-6" id="acces">
+            <div class="accesTexte col-lg-6" id="acces">
                 <div class="titreTableau">
                     <img src="assets/icones/plan.svg" alt="">
                     <h2>Accès</h2>
@@ -185,7 +185,7 @@
         devant la vitrine du chocolatier.</p>
                 </div>
             </div>
-            <div class="accesImage col-6">
+            <div class="accesImage col-lg-6">
                 <img src="assets/img/plan-acces.webp" alt="Plan d'accès au Muséum">
             </div>
         </div>
@@ -263,45 +263,44 @@ française (LSF).</li>
     </section>
   </main>
 
-
-
-<footer> <!-- Pied de page -->
-   <div class="colonnesFooter container-fluid row">
-    <div class="colonne col">
-      <img src="assets/img/logo-museum-valbrune-blanc.svg" alt="Logo blanc du Muséum de Valbrune">
-      <ul>
-        <li>Muséum de Valbrune 4, quai des Tanneurs, 00000 Valbrune</li>
-        <li>Tél. 01 99 00 42 17</li>
-        <li>contact@museum-valbrune.example</li>
-      </ul>
-    </div>
-    <div class="colonne col">
-      <h3>Horaires</h3>
-      <ul>
-        <li>Mardi au vendredi : 10 h - 18 h</li>
-        <li>Samedi et dimanche : 10 h - 19 h</li>
-        <li>Fermé le lundi</li>
-      </ul>
-    </div>
-    <div class="colonne col">
-      <div>
-        <h3>Liens utiles</h3>
+ <!-- Pied de page -->
+  <footer>
+    <div class="colonnesFooter container-fluid row gy-3">
+      <div class="colonne col-md-4">
+        <img src="assets/img/logo-museum-valbrune-blanc.svg" alt="Logo blanc du Muséum de Valbrune">
         <ul>
-          <li><a href="#" aria-current="page">Infos pratiques</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="mentions-legales.html">Mentions légales</a></li>
+          <li>Muséum de Valbrune 4, quai des Tanneurs, 00000 Valbrune</li>
+          <li>Tél. 01 99 00 42 17</li>
+          <li>contact@museum-valbrune.example</li>
         </ul>
       </div>
-      <div class="reseauxSociaux row">
-        <img src="assets/icones/facebook.png" alt="Lien vers la page Facebook du Muséum de Valbrune" class="col-4">
-        <img src="assets/icones/instagram.png" alt="Lien vers la page Instagram du Muséum de Valbrune" class="col-4">
-        <img src="assets/icones/youtube.png" alt="Lien vers la chaine YouTube du Muséum de Valbrune" class="col-4">
+      <div class="colonne col-md-4">
+        <h3>Horaires</h3>
+        <ul>
+          <li>Mardi au vendredi : 10 h - 18 h</li>
+          <li>Samedi et dimanche : 10 h - 19 h</li>
+          <li>Fermé le lundi</li>
+        </ul>
+      </div>
+      <div class="colonne col-md-4">
+        <div>
+          <h3>Liens utiles</h3>
+          <ul>
+            <li><a href="infos-pratiques.html" aria-current="page">Infos pratiques</a></li>
+            <li><a href="contact.html" >Contact</a></li>
+            <li><a href="mentions-legales.html">Mentions légales</a></li>
+          </ul>
+        </div>
+        <div class="reseauxSociaux row">
+          <img src="assets/icones/facebook.png" alt="Lien vers la page Facebook du Muséum de Valbrune" class="col-4">
+          <img src="assets/icones/instagram.png" alt="Lien vers la page Instagram du Muséum de Valbrune" class="col-4">
+          <img src="assets/icones/youtube.png" alt="Lien vers la chaine YouTube du Muséum de Valbrune" class="col-4">
+        </div>
       </div>
     </div>
-  </div>
-  <div class="basDePage">
-    <p>©2026 Muséum de Valbrune, site d'exercice réalisé par Simon Bert.</p>
-  </div>
+    <div class="basDePage">
+      <p>©2026 Muséum de Valbrune, site d'exercice réalisé par Simon Bert.</p>
+    </div>
   </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>

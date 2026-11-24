@@ -15,12 +15,12 @@
 </head>
 
 <body>
+<!-- En-tête et navigation -->
+  <header class="header sticky-top container-fluid px-0">
 
-  <header class="header sticky-top container-fluid px-0"><!-- En-tête et navigation -->
-    
     <nav class="menu container-fluid px-5 py-3">
       <div class="navbar navbar-expand-lg row navbar-light">
-        <div class="conteneurLogo col-5 text-start" >
+        <div class="conteneurLogo col-5" >
           <a class="navbar-brand" href="index.html"><img src="assets/img/logo-museum-valbrune.svg" alt="Logo du Muséum de Valbrune"></a>
         </div>
         <button class="navbar-toggler col-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
@@ -40,15 +40,15 @@
       </div>
     </nav>
 
-    <section class="bandeauInfo alert alert-dark px-5 py-1 m-0 justify-content-between align-items-center" role="alert" id="bandeauInfo">
+    <section class="bandeauInfo alert alert-dark alert-dismissible fade show px-5 m-0" role="alert" id="bandeauInfo">
       <p class="m-0 p-1"><b>Info : </b>Nocturne gratuite chaque 1er jeudi du mois, jusqu'à 21h.</p>
-      <button type="button" class="btn-close" onclick="document.getElementById('bandeauInfo').style.display = 'none';"></button>
-      
+      <button type="button" class="close btn-close pe-5" data-bs-dismiss="alert" aria-label="close"></button>
     </section>
 
   </header>
 
-  <main id="contenuAccueil"><!-- Contenu principal de la page -->
+<!-- Contenu principal de la page -->
+  <main id="contenuAccueil">
     <section class="bandeauPrincipal">
       <div class="col-md-8">
         <h1>Le Muséum de Valbrune</h1>
@@ -69,7 +69,7 @@
     <section class="aLAffiche container-fluid">
       <h2>A l'affiche</h2>
       <p>Trois bonnes raisons de pousser la porte cet hiver.</p>
-      <div class="row gx-4">
+      <div class="row">
         <div class="col-md-6 col-lg-4">
           <div class="card">
             <img class="card-img-top" src="assets/img/expo-geants-jurassique.webp" alt="Exposition sur les géants du Jurassique">
@@ -197,43 +197,44 @@
     
   </main>
 
-  <footer> <!-- Pied de page -->
-   <div class="colonnesFooter container-fluid row gy-3">
-    <div class="colonne col-md-4">
-      <img src="assets/img/logo-museum-valbrune-blanc.svg" alt="Logo blanc du Muséum de Valbrune">
-      <ul>
-        <li>Muséum de Valbrune 4, quai des Tanneurs, 00000 Valbrune</li>
-        <li>Tél. 01 99 00 42 17</li>
-        <li>contact@museum-valbrune.example</li>
-      </ul>
-    </div>
-    <div class="colonne col-md-4">
-      <h3>Horaires</h3>
-      <ul>
-        <li>Mardi au vendredi : 10 h - 18 h</li>
-        <li>Samedi et dimanche : 10 h - 19 h</li>
-        <li>Fermé le lundi</li>
-      </ul>
-    </div>
-    <div class="colonne col-md-4">
-      <div>
-        <h3>Liens utiles</h3>
+ <!-- Pied de page -->
+  <footer>
+    <div class="colonnesFooter container-fluid row gy-3">
+      <div class="colonne col-md-4">
+        <img src="assets/img/logo-museum-valbrune-blanc.svg" alt="Logo blanc du Muséum de Valbrune">
         <ul>
-          <li><a href="infos-pratiques.html">Infos pratiques</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="mentions-legales.html">Mentions légales</a></li>
+          <li>Muséum de Valbrune 4, quai des Tanneurs, 00000 Valbrune</li>
+          <li>Tél. 01 99 00 42 17</li>
+          <li>contact@museum-valbrune.example</li>
         </ul>
       </div>
-      <div class="reseauxSociaux row">
-        <img src="assets/icones/facebook.png" alt="Lien vers la page Facebook du Muséum de Valbrune" class="col-4">
-        <img src="assets/icones/instagram.png" alt="Lien vers la page Instagram du Muséum de Valbrune" class="col-4">
-        <img src="assets/icones/youtube.png" alt="Lien vers la chaine YouTube du Muséum de Valbrune" class="col-4">
+      <div class="colonne col-md-4">
+        <h3>Horaires</h3>
+        <ul>
+          <li>Mardi au vendredi : 10 h - 18 h</li>
+          <li>Samedi et dimanche : 10 h - 19 h</li>
+          <li>Fermé le lundi</li>
+        </ul>
+      </div>
+      <div class="colonne col-md-4">
+        <div>
+          <h3>Liens utiles</h3>
+          <ul>
+            <li><a href="infos-pratiques.html">Infos pratiques</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="mentions-legales.html">Mentions légales</a></li>
+          </ul>
+        </div>
+        <div class="reseauxSociaux row">
+          <img src="assets/icones/facebook.png" alt="Lien vers la page Facebook du Muséum de Valbrune" class="col-4">
+          <img src="assets/icones/instagram.png" alt="Lien vers la page Instagram du Muséum de Valbrune" class="col-4">
+          <img src="assets/icones/youtube.png" alt="Lien vers la chaine YouTube du Muséum de Valbrune" class="col-4">
+        </div>
       </div>
     </div>
-  </div>
-  <div class="basDePage">
-    <p>©2026 Muséum de Valbrune, site d'exercice réalisé par Simon Bert.</p>
-  </div>
+    <div class="basDePage">
+      <p>©2026 Muséum de Valbrune, site d'exercice réalisé par Simon Bert.</p>
+    </div>
   </footer>
 
   <!-- 3. Script de Bootstrap (bundle) : à ajouter ici, juste avant /body -->

@@ -18,23 +18,23 @@
 
   <header class="header sticky-top"><!-- En-tête et navigation -->
     
-    <nav class="menu container-fluid ps-0 pe-5">
-      <div class="navbar navbar-expand-sm bg-white navbar-light">
-        <div class="conteneurLogo col-5 ps-5 py-3 text-start" >
+    <nav class="menu container-fluid px-5 py-3">
+      <div class="navbar navbar-expand-lg row navbar-light">
+        <div class="conteneurLogo col-5 text-start" >
           <a class="navbar-brand" href="index.html"><img src="assets/img/logo-museum-valbrune.svg" alt="Logo du Muséum de Valbrune"></a>
         </div>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <button class="navbar-toggler col-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse col-7 text-end  py-3" id="collapsibleNavbar">
+        <div class="collapse navbar-collapse col-lg-7" id="collapsibleNavbar">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
-            <li class="nav-item"><a class="nav-link active" aria-current="page" href="le-museum.html">Le Muséum</a></li>
+            <li class="nav-item"><a class="nav-link active" href="le-museum.html" aria-current="page">Le Muséum</a></li>
             <li class="nav-item"><a class="nav-link" href="expositions.html">Expositions</a></li>
             <li class="nav-item"><a class="nav-link" href="agenda.html">Agenda</a></li>
             <li class="nav-item"><a class="nav-link" href="infos-pratiques.html">Infos pratiques</a></li>
             <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-            <li class="nav-item"><a class="nav-link" href="infos-pratiques.html#tarifs">Billeterie</a></li>
+            <li><a  href="infos-pratiques.html#tarifs"><button class="btn btn-primary">Billeterie</button></a></li>
           </ul>
         </div>
       </div>
@@ -57,7 +57,7 @@
 
     <section class="histoire container-fluid">
       <div class="row gx-5">
-        <div class="histoireDescriptif col-6">
+        <div class="histoireDescriptif col-lg-6">
             <h2>Notre histoire</h2>
             <p>Fondé en 1868 dans l'ancienne halle aux draps, le Muséum n'a jamais
             vraiment cessé de déménager… à l'intérieur de ses propres murs.</p>
@@ -66,7 +66,7 @@
             d'un objet sur dix est exposé : le reste est conservé dans les réserves, où il est
             étudié, restauré et prêté à d'autres musées.</p>
         </div>
-        <div class="histoireImage col-6">
+        <div class="histoireImage col-lg-6">
             <img src="assets/img/museum-facade.webp" alt="Façade du Muséum de Valbrune">
         </div>
       </div>
@@ -74,38 +74,38 @@
 
     <section class="reperes container-fluid">
         <h2>Repères</h2>
-        <div class="row gx-3 mt-3">
-          <div class="col-2">
+        <div class="row gx-3">
+          <div class="col-md-4 col-lg-2">
             <div class="repere">
                 <h3>1868</h3>
                 <p class="texteSecondaire">Ouverture dans l'ancienne halle aux draps.</p>
             </div>
           </div>
-          <div class="col-2">
+          <div class="col-md-4 col-lg-2">
             <div class="repere">
                 <h3>1903</h3>
                 <p class="texteSecondaire">Construction de la grande galerie et de sa verrière.</p>
             </div>
           </div>
-          <div class="col-2">
+          <div class="col-md-4 col-lg-2">
             <div class="repere">
                 <h3>1957</h3>
                 <p class="texteSecondaire">Arrivée du grand moulage de sauropode.</p>
             </div>
           </div>
-            <div class="col-2">
+            <div class="col-md-4 col-lg-2">
               <div class="repere">
                   <h3>1998</h3>
                   <p class="texteSecondaire">Création du service des publics.</p>
               </div>
             </div>
-            <div class="col-2">
+            <div class="col-md-4 col-lg-2">
               <div class="repere">
                   <h3>2021</h3>
                   <p class="texteSecondaire">Ouverture des réserves visitables.</p>
               </div>
             </div>
-            <div class="col-2">
+            <div class="col-md-4 col-lg-2">
               <div class="repere">
                   <h3>2026</h3>
                   <p class="texteSecondaire">Rénovation de la salle des minéraux.</p>
@@ -117,17 +117,17 @@
     <section class="mission container-fluid">
         <h2>Nos missions</h2>
         <div class="row gx-4">
-            <div class="col-4">
+            <div class="col-md-4">
                 <hr>
                 <h3>Conserver</h3>
                 <p>Inventorier, protéger et restaurer 48 000 spécimens.</p>
             </div>
-            <div class="col-4">
+            <div class="col-md-4">
                 <hr>
                 <h3>Transmettre</h3>
                 <p>Expositions, ateliers et visites pour tous les publics, de la crèche à l'université.</p>
             </div>
-            <div class="col-4">
+            <div class="col-md-4">
                 <hr>
                 <h3>Rechercher</h3>
                 <p>Accueillir chercheuses et chercheurs, et partager leurs découvertes avec le
@@ -140,8 +140,8 @@
         <h2>Le mot de la direction</h2>
         <div class="container-fluid pt-4">
           <div class="row gx-5">
-            <img src="assets/img/portrait-direction.webp" alt="Portrait de la direction du Muséum de Valbrune"  class="rounded-circle col-4">
-            <figure class="col-8">
+            <img src="assets/img/portrait-direction.webp" alt="Portrait de la direction du Muséum de Valbrune"  class="rounded-circle col-lg-4">
+            <figure class="col-lg-8">
                 <blockquote class="blockquote"cite="">
                     <img src="assets/icones/guillemets.png" alt="">
                     <p>Un muséum n'est pas une collection d'objets immobiles. C'est une
@@ -157,43 +157,44 @@
 
   </main>
 
-  <footer> <!-- Pied de page -->
-   <div class="colonnesFooter container-fluid row">
-    <div class="colonne col">
-      <img src="assets/img/logo-museum-valbrune-blanc.svg" alt="Logo blanc du Muséum de Valbrune">
-      <ul>
-        <li>Muséum de Valbrune 4, quai des Tanneurs, 00000 Valbrune</li>
-        <li>Tél. 01 99 00 42 17</li>
-        <li>contact@museum-valbrune.example</li>
-      </ul>
-    </div>
-    <div class="colonne col">
-      <h3>Horaires</h3>
-      <ul>
-        <li>Mardi au vendredi : 10 h - 18 h</li>
-        <li>Samedi et dimanche : 10 h - 19 h</li>
-        <li>Fermé le lundi</li>
-      </ul>
-    </div>
-    <div class="colonne col">
-      <div>
-        <h3>Liens utiles</h3>
+ <!-- Pied de page -->
+  <footer>
+    <div class="colonnesFooter container-fluid row gy-3">
+      <div class="colonne col-md-4">
+        <img src="assets/img/logo-museum-valbrune-blanc.svg" alt="Logo blanc du Muséum de Valbrune">
         <ul>
-          <li><a href="infos-pratiques.html">Infos pratiques</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="mentions-legales.html">Mentions légales</a></li>
+          <li>Muséum de Valbrune 4, quai des Tanneurs, 00000 Valbrune</li>
+          <li>Tél. 01 99 00 42 17</li>
+          <li>contact@museum-valbrune.example</li>
         </ul>
       </div>
-      <div class="reseauxSociaux row">
-        <img src="assets/icones/facebook.png" alt="Lien vers la page Facebook du Muséum de Valbrune" class="col-4">
-        <img src="assets/icones/instagram.png" alt="Lien vers la page Instagram du Muséum de Valbrune" class="col-4">
-        <img src="assets/icones/youtube.png" alt="Lien vers la chaine YouTube du Muséum de Valbrune" class="col-4">
+      <div class="colonne col-md-4">
+        <h3>Horaires</h3>
+        <ul>
+          <li>Mardi au vendredi : 10 h - 18 h</li>
+          <li>Samedi et dimanche : 10 h - 19 h</li>
+          <li>Fermé le lundi</li>
+        </ul>
+      </div>
+      <div class="colonne col-md-4">
+        <div>
+          <h3>Liens utiles</h3>
+          <ul>
+            <li><a href="infos-pratiques.html">Infos pratiques</a></li>
+            <li><a href="contact.html" >Contact</a></li>
+            <li><a href="mentions-legales.html">Mentions légales</a></li>
+          </ul>
+        </div>
+        <div class="reseauxSociaux row">
+          <img src="assets/icones/facebook.png" alt="Lien vers la page Facebook du Muséum de Valbrune" class="col-4">
+          <img src="assets/icones/instagram.png" alt="Lien vers la page Instagram du Muséum de Valbrune" class="col-4">
+          <img src="assets/icones/youtube.png" alt="Lien vers la chaine YouTube du Muséum de Valbrune" class="col-4">
+        </div>
       </div>
     </div>
-  </div>
-  <div class="basDePage">
-    <p>©2026 Muséum de Valbrune, site d'exercice réalisé par Simon Bert.</p>
-  </div>
+    <div class="basDePage">
+      <p>©2026 Muséum de Valbrune, site d'exercice réalisé par Simon Bert.</p>
+    </div>
   </footer>
 
   <!-- 3. Script de Bootstrap (bundle) : à ajouter ici, juste avant /body -->

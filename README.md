@@ -51,7 +51,7 @@ Pour lancer le projet :
 |   09/11/26   | Sur quelles plateformes de réseau social êtes-vous et n’êtes pas encore ? | Nous n'avons pas encore de comptes mais il faut mettre des icones sans liens cliquables de Facebook, Instagram et X |
 
 ## Difficultés rencontrées et solutions trouvées
-- Comment faire disparaitre le bandeau d'information au clic sur la croix de fermeture => solution trouvée via Google Gemini : attribut onclick="document.getElementById('bandeauInfo').style.display = 'none';"
+- Comment faire disparaitre le bandeau d'information au clic sur la croix de fermeture => solution trouvée dans la doc officielle 
 - Comment faire un list-group => solution trouvée sur doc officielle de Bootstrap
 - Comment faire un menu dépliant sur les petits ecrans => solution trouvée dans le cours sur Bootstrap
 - Comment faire un fil d'ariane => solution trouvée sur doc officielle de Bootstrap
@@ -63,6 +63,7 @@ Pour lancer le projet :
 - Comment mettre en forme proprement l'accordéon de la faq => solution trouvée sur doc officielle de Bootstrap, complément nécessaire avec Gemini pour l'intégration
 - Comment styliser blockquote avec bootstrap => solution trouvée sur doc officielle de Bootstrap
 - Comment gére les espacements entre les differentes cartes de la page Exposition avec gx => solution trouvée sur doc officielle de Bootstrap, complément nécessaire avec Gemini pour l'intégration
+- Régler le scroll pour voir le début de la section lorsqu'on clic sur une ancre avec le header en sticky top
 
 
 ## Sources consultées

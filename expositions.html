@@ -18,15 +18,15 @@
 
   <header class="header sticky-top"><!-- En-tête et navigation -->
     
-        <nav class="menu container-fluid ps-0 pe-5">
-      <div class="navbar navbar-expand-sm bg-white navbar-light">
-        <div class="conteneurLogo col-5 ps-5 py-3 text-start" >
+    <nav class="menu container-fluid px-5 py-3">
+      <div class="navbar navbar-expand-lg row navbar-light">
+        <div class="conteneurLogo col-5 text-start" >
           <a class="navbar-brand" href="index.html"><img src="assets/img/logo-museum-valbrune.svg" alt="Logo du Muséum de Valbrune"></a>
         </div>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <button class="navbar-toggler col-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse col-7 text-end  py-3" id="collapsibleNavbar">
+        <div class="collapse navbar-collapse col-lg-7" id="collapsibleNavbar">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
             <li class="nav-item"><a class="nav-link" href="le-museum.html">Le Muséum</a></li>
@@ -34,7 +34,7 @@
             <li class="nav-item"><a class="nav-link" href="agenda.html">Agenda</a></li>
             <li class="nav-item"><a class="nav-link" href="infos-pratiques.html">Infos pratiques</a></li>
             <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-            <li class="nav-item"><a class="nav-link" href="infos-pratiques.html#tarifs">Billeterie</a></li>
+            <li><a  href="infos-pratiques.html#tarifs"><button class="btn btn-primary">Billeterie</button></a></li>
           </ul>
         </div>
       </div>
@@ -65,49 +65,55 @@
     <section class="expoPermanentes container-fluid" id="permanentes">
         <h2>Expositions permanentes</h2>
         <div class="col gy-5">
-            <div class="card row-4">
+            <div class="card row-md-4">
               <div class="row">               
-                <div class="col-4">
+                <div class="col-md-4">
                   <img class="card-img-top" src="assets/img/expo-geants-jurassique.webp" alt="Exposition sur les géants du Jurassique">
                 </div>
-                <div class="card-body col-8">
-                    <button class="btn-badge">Permanente</button>
-                    <div class="card-title h3">Les Géants du Jurassique</div>
-                    <div class="card-subtitle">GRANDE GALERIE</div>
-                    <p class="card-text">Sous la verrière de 1903,
-                    squelettes et moulages retracent l'histoire des grands reptiles, des premiers
-                    pas aux dernières extinctions. Une table tactile permet de manipuler des
-                    reproductions de fossiles.</p>
+                <div class="col-md-8">
+                  <div class="card-body">
+                      <button class="btn-badge">Permanente</button>
+                      <div class="card-title"><h3>Les Géants du Jurassique</h3></div>
+                      <div class="card-subtitle">GRANDE GALERIE</div>
+                      <p class="card-text">Sous la verrière de 1903,
+                      squelettes et moulages retracent l'histoire des grands reptiles, des premiers
+                      pas aux dernières extinctions. Une table tactile permet de manipuler des
+                      reproductions de fossiles.</p>
+                  </div>
                 </div>
               </div>  
             </div>
-            <div class="card row-4">
+            <div class="card row-md-4">
               <div class="row">
-                <div class="col-4">               
+                <div class="col-md-4">               
                   <img class="card-img-top" src="assets/img/expo-forets-ici.webp" alt="Exposition sur les êtres vivants des forêts de la région">
-                </div> 
-                <div class="card-body col-8">
-                    <button class="btn-badge">Permanente</button>
-                    <div class="card-title h3">Forêts d'ici</div>
-                    <div class="card-subtitle">SALLE 2</div>
-                    <p class="card-text">Chênes, champignons, chouettes et coléoptères : une
-                    plongée dans les forêts de la région, au fil des saisons. Ambiance sonore
-                    enregistrée sur place.</p>
+                </div>
+                <div class="col-md-8"> 
+                  <div class="card-body">
+                      <button class="btn-badge">Permanente</button>
+                      <div class="card-title"><h3>Forêts d'ici</h3></div>
+                      <div class="card-subtitle">SALLE 2</div>
+                      <p class="card-text">Chênes, champignons, chouettes et coléoptères : une
+                      plongée dans les forêts de la région, au fil des saisons. Ambiance sonore
+                      enregistrée sur place.</p>
+                  </div>
                 </div>
               </div> 
             </div>
-            <div class="card row-4">
+            <div class="card row-md-4">
               <div class="row">
-                <div class="col-4">               
+                <div class="col-md-4">               
                   <img class="card-img-top" src="assets/img/expo-cabinet-curiosites.webp" alt="Exposition sur le cabinet des curiosités">
                 </div>  
-                <div class="card-body col-8">
-                    <button class="btn-badge">Permanente</button>
-                    <div class="card-title h3">Le Cabinet des curiosités</div>
-                    <div class="card-subtitle">SALLE 3</div>
-                    <p class="card-text">Reconstitution d'un cabinet du XVIIIe siècle :
-                    coquillages rares, animaux naturalisés et objets étranges, avec leurs vraies et
-                    leurs fausses histoires.</p>
+                <div class="col-md-8">
+                  <div class="card-body">
+                      <button class="btn-badge">Permanente</button>
+                      <div class="card-title"><h3>Le Cabinet des curiosités</h3></div>
+                      <div class="card-subtitle">SALLE 3</div>
+                      <p class="card-text">Reconstitution d'un cabinet du XVIIIe siècle :
+                      coquillages rares, animaux naturalisés et objets étranges, avec leurs vraies et
+                      leurs fausses histoires.</p>
+                  </div>
                 </div>
               </div>
             </div>            
@@ -117,7 +123,7 @@
     <section class="expoTemporaires container-fluid" id="temporaires">
         <h2>Expositions temporaires</h2>
         <div class="row gx-5">
-          <div class="col-6">
+          <div class="col-md-6">
             <div class="card">
                 <img class="card-img-top" src="assets/img/expo-lumieres-sous-sol.webp" alt="Exposition les lumières du sous-sol">
                 <div class="card-body">
@@ -127,11 +133,11 @@
                     SALLE DES MINERAUX</div>
                     <p class="card-text">Deux cents minéraux fluorescents révèlent leurs couleurs cachées
                     sous lumière ultraviolette. Un parcours dans le noir, accessible dès 6 ans.</p>
-                    <button class="btn btn-secondary">En savoir plus</button>
+                    <button class="btn btn-secondary col-5">En savoir plus</button>
                 </div>
               </div>
             </div>
-            <div class="col-6">
+            <div class="col-md-6">
               <div class="card">
                   <img class="card-img-top" src="assets/img/expo-plumes-riviere.webp" alt="Exposition sur les Plumes de rivière">
                   <div class="card-body">
@@ -140,7 +146,7 @@
                       <div class="card-subtitle">DU 2 DECEMBRE 2026 AU 30 MAI 2027 <br>
                       GALERIE HAUTE</div>
                       <p class="card-text">Une exposition à écouter autant qu'à regarder : chants, cris et battements d'ailes des oiseaux de nos rivières, enregistrés au fil d'une année.</p>
-                      <button class="btn btn-secondary">En savoir plus</button>
+                      <button class="btn btn-secondary col-5">En savoir plus</button>
                   </div>
               </div>
             </div>
@@ -149,11 +155,11 @@
     
     <section class="visiteGroupe container-fluid">
       <div class="row">
-        <div class="col-9">
+        <div class="col-md-9">
           <h3>Vous venez en groupe ?</h3>
           <p>Vous venez en groupe ? Les visites guidées se réservent au moins trois semaines à l'avance.</p>
         </div>
-        <div class="col-3">
+        <div class="col-6 col-md-3">
            <button class="btn btn-primary">Nous contacter</button> 
         </div>
       </div>
@@ -161,43 +167,44 @@
 
   </main>
 
-  <footer> <!-- Pied de page -->
-   <div class="colonnesFooter container-fluid row">
-    <div class="colonne col">
-      <img src="assets/img/logo-museum-valbrune-blanc.svg" alt="Logo blanc du Muséum de Valbrune">
-      <ul>
-        <li>Muséum de Valbrune 4, quai des Tanneurs, 00000 Valbrune</li>
-        <li>Tél. 01 99 00 42 17</li>
-        <li>contact@museum-valbrune.example</li>
-      </ul>
-    </div>
-    <div class="colonne col">
-      <h3>Horaires</h3>
-      <ul>
-        <li>Mardi au vendredi : 10 h - 18 h</li>
-        <li>Samedi et dimanche : 10 h - 19 h</li>
-        <li>Fermé le lundi</li>
-      </ul>
-    </div>
-    <div class="colonne col">
-      <div>
-        <h3>Liens utiles</h3>
+ <!-- Pied de page -->
+  <footer>
+    <div class="colonnesFooter container-fluid row gy-3">
+      <div class="colonne col-md-4">
+        <img src="assets/img/logo-museum-valbrune-blanc.svg" alt="Logo blanc du Muséum de Valbrune">
         <ul>
-          <li><a href="infos-pratiques.html">Infos pratiques</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="mentions-legales.html">Mentions légales</a></li>
+          <li>Muséum de Valbrune 4, quai des Tanneurs, 00000 Valbrune</li>
+          <li>Tél. 01 99 00 42 17</li>
+          <li>contact@museum-valbrune.example</li>
         </ul>
       </div>
-      <div class="reseauxSociaux row">
-        <img src="assets/icones/facebook.png" alt="Lien vers la page Facebook du Muséum de Valbrune" class="col-4">
-        <img src="assets/icones/instagram.png" alt="Lien vers la page Instagram du Muséum de Valbrune" class="col-4">
-        <img src="assets/icones/youtube.png" alt="Lien vers la chaine YouTube du Muséum de Valbrune" class="col-4">
+      <div class="colonne col-md-4">
+        <h3>Horaires</h3>
+        <ul>
+          <li>Mardi au vendredi : 10 h - 18 h</li>
+          <li>Samedi et dimanche : 10 h - 19 h</li>
+          <li>Fermé le lundi</li>
+        </ul>
+      </div>
+      <div class="colonne col-md-4">
+        <div>
+          <h3>Liens utiles</h3>
+          <ul>
+            <li><a href="infos-pratiques.html">Infos pratiques</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="mentions-legales.html">Mentions légales</a></li>
+          </ul>
+        </div>
+        <div class="reseauxSociaux row">
+          <img src="assets/icones/facebook.png" alt="Lien vers la page Facebook du Muséum de Valbrune" class="col-4">
+          <img src="assets/icones/instagram.png" alt="Lien vers la page Instagram du Muséum de Valbrune" class="col-4">
+          <img src="assets/icones/youtube.png" alt="Lien vers la chaine YouTube du Muséum de Valbrune" class="col-4">
+        </div>
       </div>
     </div>
-  </div>
-  <div class="basDePage">
-    <p>©2026 Muséum de Valbrune, site d'exercice réalisé par Simon Bert.</p>
-  </div>
+    <div class="basDePage">
+      <p>©2026 Muséum de Valbrune, site d'exercice réalisé par Simon Bert.</p>
+    </div>
   </footer>
 
   <!-- 3. Script de Bootstrap (bundle) : à ajouter ici, juste avant /body -->
