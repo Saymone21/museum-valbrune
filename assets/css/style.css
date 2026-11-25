@@ -129,6 +129,10 @@ html {
 --bs-btn-active-border-color: var(--mv-lichen-fonce);
 --bs-btn-border-radius: 8px;
   padding: 10px 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn-secondary {
@@ -136,6 +140,7 @@ html {
 --bs-btn-color: var(--mv-encre);
 --bs-btn-border-color: var(--mv-encre);
   padding: 10px 20px;
+  width: 100%;
 }
 
 .btn-primary a, .btn-secondary a {
@@ -166,6 +171,22 @@ html {
   border-top: 1px solid var(--mv-ardoise);
 }
 
+/* Lien d'évitement */
+a.evitement {
+   display: inline-block;
+   color: #555;
+   background: #fff;
+   padding: .5em;
+   position: absolute;
+   left: -99999rem;
+   z-index: 100;
+}
+
+a.evitement:focus {
+   left: 0;
+}
+
+
 /* --------------------------------------------------------------------------
    3. Vos styles
    -------------------------------------------------------------------------- */
@@ -186,6 +207,20 @@ header a.active {
   color: var(--mv-encre);
 }
 
+@media (max-width: 380px) {
+  .logo {
+    min-height: 40px;
+    width: 120px;
+  }
+}
+
+@media (max-width: 576px) {
+  .iconeRS {
+    width: 80px;
+    padding: 10px;
+  }
+}
+
 /* Menu Burger */
 .navbar-collapse li {
   display: flex;
@@ -204,8 +239,9 @@ nav.menu:has(.navbar-collapse.show), nav.menu:has(.navbar-collapse.collapsing) {
 }
 
 .navbar-collapse.show li:last-child,.navbar-collapse.collapsing li:last-child {
-  width: 30%;
+  width: 40%;
   justify-content: start;
+  padding: 20px 0px 10px 0px;
 }
 
 
@@ -243,6 +279,11 @@ nav.menu:has(.navbar-collapse.show), nav.menu:has(.navbar-collapse.collapsing) {
   color: white;
   padding: 40px 0px 10px 0px;
 }
+
+.chiffresClef h2{
+  color: white;
+}
+
 .chiffresClef .row{
   margin: 30px;
 }
@@ -588,7 +629,7 @@ footer ul {
 .reseauxSociaux{
   margin-top: 30px;
   height: auto;
-  width: 250px;
+  max-width: 250px;
 }
 
 .basDePage {

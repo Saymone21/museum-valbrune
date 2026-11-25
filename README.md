@@ -72,6 +72,8 @@ Listez les pages de documentation, tutoriels, vidéos, personnes qui vous ont ai
 - Cours sur Bootstrap, HTML et CSS
 - Google Gemini
 - Documentation officielle Bootstrap
+- developer.mozilla.org
+- accede-web.com => pour mise en place lien d'évitement
 
 ## Déclaration d'usage d'outils d'IA
 

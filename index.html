@@ -15,13 +15,16 @@
 </head>
 
 <body>
+<!-- Lien d'évitement -->
+<a class="evitement" href="#contenuAccueil">Aller au contenu</a>
+
 <!-- En-tête et navigation -->
   <header class="header sticky-top container-fluid px-0">
 
     <nav class="menu container-fluid px-5 py-3">
       <div class="navbar navbar-expand-lg row navbar-light">
         <div class="conteneurLogo col-5" >
-          <a class="navbar-brand" href="index.html"><img src="assets/img/logo-museum-valbrune.svg" alt="Logo du Muséum de Valbrune"></a>
+          <a class="navbar-brand" href="index.html"><img src="assets/img/logo-museum-valbrune.svg" class="logo" alt="Logo du Muséum de Valbrune"></a>
         </div>
         <button class="navbar-toggler col-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
           <span class="navbar-toggler-icon"></span>
@@ -34,32 +37,32 @@
             <li class="nav-item"><a class="nav-link" href="agenda.html">Agenda</a></li>
             <li class="nav-item"><a class="nav-link" href="infos-pratiques.html">Infos pratiques</a></li>
             <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-            <li><a  href="infos-pratiques.html#tarifs"><button class="btn btn-primary">Billeterie</button></a></li>
+            <li><a  href="infos-pratiques.html#tarifs" class="btn btn-primary">Billeterie</a></li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <section class="bandeauInfo alert alert-dark alert-dismissible fade show px-5 m-0" role="alert" id="bandeauInfo">
+    <div class="bandeauInfo alert alert-dark alert-dismissible fade show px-5 m-0" role="alert" id="bandeauInfo">
       <p class="m-0 p-1"><b>Info : </b>Nocturne gratuite chaque 1er jeudi du mois, jusqu'à 21h.</p>
       <button type="button" class="close btn-close pe-5" data-bs-dismiss="alert" aria-label="close"></button>
-    </section>
+    </div>
 
   </header>
 
 <!-- Contenu principal de la page -->
   <main id="contenuAccueil">
-    <section class="bandeauPrincipal">
+    <section class="bandeauPrincipal container-fluid p-0">
       <div class="col-md-8">
         <h1>Le Muséum de Valbrune</h1>
         <p>Des cailloux, des plumes et beaucoup de questions : depuis 1868, le Muséum les rassemble sous un même toit.</p>
         <div class="conteneurBoutons container-fluid p-0">
           <div class="row">
             <div class="col-6 col-md-4">
-              <button class="btn btn-primary"><a href="infos-pratiques.html">Préparer ma visite</a></button>
+              <a href="infos-pratiques.html" class="btn btn-primary">Préparer ma visite</a>
             </div>
             <div class="col-6 col-md-4">
-            <button class="btn btn-secondary"><a href="expositions.html">Voir les expositions</a></button>
+            <a href="expositions.html" class="btn btn-secondary">Voir les expositions</a>
             </div>
           </div>
         </div>
@@ -72,7 +75,7 @@
       <div class="row">
         <div class="col-md-6 col-lg-4">
           <div class="card">
-            <img class="card-img-top" src="assets/img/expo-geants-jurassique.webp" alt="Exposition sur les géants du Jurassique">
+            <img class="card-img-top" src="assets/img/expo-geants-jurassique.webp" alt="Exposition sur les géants du Jurassique" loading="lazy">
             <div class="card-body">
               <button class="btn btn-badge col-4">Permanente</button>
               <div class="card-title h3">Les Géants du Jurassique</div>
@@ -84,7 +87,7 @@
         </div>
         <div class="col-md-6 col-lg-4">
           <div class="card">
-            <img class="card-img-top" src="assets/img/expo-lumieres-sous-sol.webp" alt="Exposition les lumières du sous-sol">
+            <img class="card-img-top" src="assets/img/expo-lumieres-sous-sol.webp" alt="Exposition les lumières du sous-sol" loading="lazy">
             <div class="card-body">
               <button class="btn btn-badge col-4">Temporaire</button>
               <div class="card-title h3">Lumières du sous-sol</div>
@@ -96,7 +99,7 @@
         </div>
         <div class="col-md-6 col-lg-4">
           <div class="card">
-            <img class="card-img-top" src="assets/img/expo-plumes-riviere.webp" alt="Exposition sur les Plumes de rivière">
+            <img class="card-img-top" src="assets/img/expo-plumes-riviere.webp" alt="Exposition sur les Plumes de rivière" loading="lazy">
             <div class="card-body">
               <button class="btn btn-badge col-4">Temporaire</button>
               <div class="card-title h3">Plumes de rivière</div>
@@ -161,7 +164,7 @@
             <h2>La lettre du Muséum</h2>
             <p>Une fois par mois, le programme et une curiosité tirée des réserves.</p>  
             <label for="email" class="labelFormulaire">Votre adresse e-mail</label><br>
-            <input type="email" name="email" class="champFormulaire"><br>
+            <input type="email" id="email" name="email" class="champFormulaire"><br>
             <button type="submit" class="btn btn-primary">Je m'inscris</button><br>
             <i>Désinscription en un clic. Voir nos mentions légales.</i>
             </fieldset>
@@ -174,19 +177,19 @@
       <h2>Préparer sa visite</h2>
       <div class="infoVisite row">
         <div class="blocInfoVisite col-md-4">
-          <img src="assets/icones/horloge.svg" alt="">
+          <img src="assets/icones/horloge.svg" alt="" aria-hidden="true">
           <h3>Horaires</h3>
           <p>Du mardi au dimanche, dès 10 h.</p>
           <a href="infos-pratiques.html#horaires" class="lienEnSavoirPlus">Voir les horaires</a><span>-></span>
         </div>
         <div class="blocInfoVisite col-md-4">
-          <img src="assets/icones/billet.svg" alt="">
+          <img src="assets/icones/billet.svg" alt="" aria-hidden="true">
           <h3>Tarifs</h3>
           <p>Gratuit pour les moins de 12 ans.</p>
           <a href="infos-pratiques.html#tarifs" class="lienEnSavoirPlus">Voir les tarifs</a><span>-></span>
         </div>
         <div class="blocInfoVisite col-md-4">
-          <img src="assets/icones/plan.svg" alt="">
+          <img src="assets/icones/plan.svg" alt="" aria-hidden="true">
           <h3>Accès</h3>
           <p>Tram B, arrêt Quai des Tanneurs.</p>
           <a href="infos-pratiques.html#acces" class="lienEnSavoirPlus">Venir au Muséum</a><span>-></span>
@@ -201,7 +204,7 @@
   <footer>
     <div class="colonnesFooter container-fluid row gy-3">
       <div class="colonne col-md-4">
-        <img src="assets/img/logo-museum-valbrune-blanc.svg" alt="Logo blanc du Muséum de Valbrune">
+        <img src="assets/img/logo-museum-valbrune-blanc.svg" class="logo" alt="Logo blanc du Muséum de Valbrune" loading="lazy">
         <ul>
           <li>Muséum de Valbrune 4, quai des Tanneurs, 00000 Valbrune</li>
           <li>Tél. 01 99 00 42 17</li>
@@ -226,9 +229,9 @@
           </ul>
         </div>
         <div class="reseauxSociaux row">
-          <img src="assets/icones/facebook.png" alt="Lien vers la page Facebook du Muséum de Valbrune" class="col-4">
-          <img src="assets/icones/instagram.png" alt="Lien vers la page Instagram du Muséum de Valbrune" class="col-4">
-          <img src="assets/icones/youtube.png" alt="Lien vers la chaine YouTube du Muséum de Valbrune" class="col-4">
+          <img src="assets/icones/facebook.webp" alt="Lien vers la page Facebook du Muséum de Valbrune" class="iconeRS col-sm-4" loading="lazy">
+          <img src="assets/icones/instagram.webp" alt="Lien vers la page Instagram du Muséum de Valbrune" class="iconeRS col-sm-4" loading="lazy">
+          <img src="assets/icones/youtube.webp" alt="Lien vers la chaine YouTube du Muséum de Valbrune" class="iconeRS col-sm-4" loading="lazy">
         </div>
       </div>
     </div>
