@@ -26,7 +26,7 @@
         <div class="conteneurLogo col-5" >
           <a class="navbar-brand" href="index.html"><img src="assets/img/logo-museum-valbrune.svg" class="logo" alt="Logo du Muséum de Valbrune"></a>
         </div>
-        <button class="navbar-toggler col-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <button class="navbar-toggler col-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" aria-label="menu">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse col-lg-7" id="collapsibleNavbar">
@@ -37,7 +37,7 @@
             <li class="nav-item"><a class="nav-link" href="agenda.html">Agenda</a></li>
             <li class="nav-item"><a class="nav-link" href="infos-pratiques.html">Infos pratiques</a></li>
             <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-            <li><a  href="infos-pratiques.html#tarifs"><button class="btn btn-primary">Billeterie</button></a></li>
+            <li><a  href="infos-pratiques.html#tarifs" class="btn btn-primary">Billeterie</a></li>
           </ul>
         </div>
       </div>
@@ -60,8 +60,8 @@
 
     <nav class="sommairePage">
         <ul>
-            <li><button class="btn btn-primary"><a href="#permanentes">Permanentes</a></button></li>
-            <li><button class="btn btn-secondary"><a href="#temporaires">Temporaires</a></button></li>
+            <li><a href="#permanentes" class="btn btn-primary" aria-label="Expositions permanentes">Permanentes</a></li>
+            <li><a href="#temporaires" class="btn btn-secondary" aria-label="Expositions temporaires">Temporaires</a></li>
         </ul>
     </nav>
     
@@ -75,7 +75,7 @@
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
-                      <button class="btn-badge">Permanente</button>
+                      <button class="btn-badge" aria-label="Exposition permanente">Permanente</button>
                       <div class="card-title"><h3>Les Géants du Jurassique</h3></div>
                       <div class="card-subtitle">GRANDE GALERIE</div>
                       <p class="card-text">Sous la verrière de 1903,
@@ -93,7 +93,7 @@
                 </div>
                 <div class="col-md-8"> 
                   <div class="card-body">
-                      <button class="btn-badge">Permanente</button>
+                      <button class="btn-badge" aria-label="Exposition permanente">Permanente</button>
                       <div class="card-title"><h3>Forêts d'ici</h3></div>
                       <div class="card-subtitle">SALLE 2</div>
                       <p class="card-text">Chênes, champignons, chouettes et coléoptères : une
@@ -110,7 +110,7 @@
                 </div>  
                 <div class="col-md-8">
                   <div class="card-body">
-                      <button class="btn-badge">Permanente</button>
+                      <button class="btn-badge" aria-label="Exposition permanente">Permanente</button>
                       <div class="card-title"><h3>Le Cabinet des curiosités</h3></div>
                       <div class="card-subtitle">SALLE 3</div>
                       <p class="card-text">Reconstitution d'un cabinet du XVIIIe siècle :
@@ -130,13 +130,13 @@
             <div class="card">
                 <img class="card-img-top" src="assets/img/expo-lumieres-sous-sol.webp" alt="Exposition les lumières du sous-sol" loading="lazy">
                 <div class="card-body">
-                    <button class="btn-badge">Temporaire</button>
+                    <button class="btn btn-badge" aria-label="Exposition temporaire">Temporaire</button>
                     <div class="card-title h3">Lumières du sous-sol</div>
                     <div class="card-subtitle">DU 14 OCTOBRE 2026 AU 28 FEVRIER 2027 <br>
                     SALLE DES MINERAUX</div>
                     <p class="card-text">Deux cents minéraux fluorescents révèlent leurs couleurs cachées
                     sous lumière ultraviolette. Un parcours dans le noir, accessible dès 6 ans.</p>
-                    <button class="btn btn-secondary col-5">En savoir plus</button>
+                    <button class="btn btn-secondary col-5" aria-label="En savoir plus">En savoir plus</button>
                 </div>
               </div>
             </div>
@@ -144,12 +144,12 @@
               <div class="card">
                   <img class="card-img-top" src="assets/img/expo-plumes-riviere.webp" alt="Exposition sur les Plumes de rivière" loading="lazy">
                   <div class="card-body">
-                      <button class="btn-badge">Temporaire</button>
+                      <button class="btn-badge" aria-label="Exposition temporaire">Temporaire</button>
                       <div class="card-title h3">Plumes de rivière</div>
                       <div class="card-subtitle">DU 2 DECEMBRE 2026 AU 30 MAI 2027 <br>
                       GALERIE HAUTE</div>
                       <p class="card-text">Une exposition à écouter autant qu'à regarder : chants, cris et battements d'ailes des oiseaux de nos rivières, enregistrés au fil d'une année.</p>
-                      <button class="btn btn-secondary col-5">En savoir plus</button>
+                      <button class="btn btn-secondary col-5" aria-label="En savoir plus">En savoir plus</button>
                   </div>
               </div>
             </div>
@@ -163,7 +163,7 @@
           <p>Vous venez en groupe ? Les visites guidées se réservent au moins trois semaines à l'avance.</p>
         </div>
         <div class="col-6 col-md-3">
-           <button class="btn btn-primary">Nous contacter</button> 
+           <button class="btn btn-primary" aria-label="Nous contacter">Nous contacter</button> 
         </div>
       </div>
     </section>

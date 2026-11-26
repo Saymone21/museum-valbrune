@@ -26,7 +26,7 @@
         <div class="conteneurLogo col-5" >
           <a class="navbar-brand" href="index.html"><img src="assets/img/logo-museum-valbrune.svg" class="logo" alt="Logo du Muséum de Valbrune"></a>
         </div>
-        <button class="navbar-toggler col-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <button class="navbar-toggler col-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" aria-label="menu">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse col-lg-7" id="collapsibleNavbar">
@@ -77,7 +77,7 @@
           <div class="card">
             <img class="card-img-top" src="assets/img/expo-geants-jurassique.webp" alt="Exposition sur les géants du Jurassique" loading="lazy">
             <div class="card-body">
-              <button class="btn btn-badge col-4">Permanente</button>
+              <button class="btn btn-badge col-4" aria-label="Exposition permanente">Permanente</button>
               <div class="card-title h3">Les Géants du Jurassique</div>
               <div class="card-subtitle texteSecondaire">GRANDE GALERIE</div>
               <p class="card-text">Squelettes, empreintes et moulages : la grande galerie raconte 150 millions d'années en quarante pas.</p>
@@ -86,10 +86,10 @@
           </div>
         </div>
         <div class="col-md-6 col-lg-4">
-          <div class="card">
+          <div class="card">    
             <img class="card-img-top" src="assets/img/expo-lumieres-sous-sol.webp" alt="Exposition les lumières du sous-sol" loading="lazy">
             <div class="card-body">
-              <button class="btn btn-badge col-4">Temporaire</button>
+              <button class="btn btn-badge col-4" aria-label="Exposition temporaire">Temporaire</button>
               <div class="card-title h3">Lumières du sous-sol</div>
               <div class="card-subtitle texteSecondaire">DU 14 OCTOBRE 2026 AU 28 FEVRIER 2027</div>
               <p class="card-text">Deux cents minéraux fluorescents s'allument sous vos yeux, dans une salle plongée dans le noir.</p>
@@ -101,7 +101,7 @@
           <div class="card">
             <img class="card-img-top" src="assets/img/expo-plumes-riviere.webp" alt="Exposition sur les Plumes de rivière" loading="lazy">
             <div class="card-body">
-              <button class="btn btn-badge col-4">Temporaire</button>
+              <button class="btn btn-badge col-4" aria-label="Exposition temporaire">Temporaire</button>
               <div class="card-title h3">Plumes de rivière</div>
               <div class="card-subtitle texteSecondaire">DU 2 DECEMBRE 2026 AU 30 MAI 2027</div>
               <p class="card-text">Hérons, martins-pêcheurs et bergeronnettes : les oiseaux de nos rivières comme vous ne les avez jamais écoutés.</p>
@@ -165,7 +165,7 @@
             <p>Une fois par mois, le programme et une curiosité tirée des réserves.</p>  
             <label for="email" class="labelFormulaire">Votre adresse e-mail</label><br>
             <input type="email" id="email" name="email" class="champFormulaire"><br>
-            <button type="submit" class="btn btn-primary">Je m'inscris</button><br>
+            <button type="submit" class="btn btn-primary" aria-label="Je m'inscris">Je m'inscris</button><br>
             <i>Désinscription en un clic. Voir nos mentions légales.</i>
             </fieldset>
           </form>

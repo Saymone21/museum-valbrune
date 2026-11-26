@@ -62,7 +62,7 @@ Pour lancer le projet :
 - Comment gérer l'espacement entre plusieurs div avec des goutières => solution trouvée dans le cours sur Bootstrap, complément nécessaire avec la doc officielle de Bootstrap et Gemini
 - Comment mettre en forme proprement l'accordéon de la faq => solution trouvée sur doc officielle de Bootstrap, complément nécessaire avec Gemini pour l'intégration
 - Comment styliser blockquote avec bootstrap => solution trouvée sur doc officielle de Bootstrap
-- Comment gére les espacements entre les differentes cartes de la page Exposition avec gx => solution trouvée sur doc officielle de Bootstrap, complément nécessaire avec Gemini pour l'intégration
+- Comment gérer les espacements entre les differentes cartes de la page Exposition avec gx => solution trouvée sur doc officielle de Bootstrap, complément nécessaire avec Gemini pour l'intégration
 - Régler le scroll pour voir le début de la section lorsqu'on clic sur une ancre avec le header en sticky top
 
 

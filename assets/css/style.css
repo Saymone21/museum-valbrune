@@ -143,12 +143,16 @@ html {
   width: 100%;
 }
 
-.btn-primary a, .btn-secondary a {
-    text-decoration: none;
+.btn-primary a, .btn-secondary a, .btn-badge a, .btn-primary a:visited, .btn-secondary a:visited, .btn-badge a:visited {
+  text-decoration: none;
 }
 
-.btn-primary a:hover, .btn-secondary a:hover{
-  color: white;
+.btn-primary a:hover, .btn-secondary a:hover {
+  color: white; 
+}
+
+.btn-primary a:focus, .btn-secondary a:focus {
+  outline: 2px solid var(--mv-ardoise);
 }
 
 .btn-badge{
@@ -160,6 +164,12 @@ html {
   min-width: 120px;
 
 }
+
+.btn-badge:hover {
+  outline: 2px solid var(--mv-ocre);
+  background-color: white;
+}
+
 
 .entete {
   background-color: var(--mv-craie);

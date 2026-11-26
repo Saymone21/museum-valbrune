@@ -26,7 +26,7 @@
         <div class="conteneurLogo col-5" >
           <a class="navbar-brand" href="index.html"><img src="assets/img/logo-museum-valbrune.svg" class="logo" alt="Logo du Muséum de Valbrune"></a>
         </div>
-        <button class="navbar-toggler col-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <button class="navbar-toggler col-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" aria-label="menu">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse col-lg-7" id="collapsibleNavbar">
@@ -37,7 +37,7 @@
             <li class="nav-item"><a class="nav-link" href="agenda.html">Agenda</a></li>
             <li class="nav-item"><a class="nav-link" href="infos-pratiques.html">Infos pratiques</a></li>
             <li class="nav-item"><a class="nav-link active" href="contact.html" aria-current="page">Contact</a></li>
-            <li><a  href="infos-pratiques.html#tarifs"><button class="btn btn-primary">Billeterie</button></a></li>
+            <li><a  href="infos-pratiques.html#tarifs" class="btn btn-primary">Billeterie</a></li>
           </ul>
         </div>
       </div>
@@ -53,33 +53,33 @@
 
   <main id="contenuContact"><!-- Contenu principal de la page -->
     <section class="entete">
-        <h2>Contact</h2>
+        <h1>Contact</h1>
         <p>Une question, une réservation de groupe, une demande presse ? Écrivez-nous.</p>
     </section>
 
     <section class="encrivezNous container-fluid">
       <div class="row g-5">  
         <div class="col-lg-7">
-              <h3>Ecrivez-nous</h3>
+              <h2>Ecrivez-nous</h2>
               <form action="post">
                   <div class="row">
                     <div class="col-md-6">
                         <label for="nom">Nom *</label><br>
-                        <input type="text" name="nom" class="champContact col-12"><br>
+                        <input type="text" id="nom" name="nom" class="champContact col-12"><br>
                     </div>
                     <div class="col-md-6">
                       <label for="prenom">Prénom</label><br>
-                      <input type="text" name="prenom" class="champContact col-12"><br>
+                      <input type="text" id="prenom" name="prenom" class="champContact col-12"><br>
                     </div>
                   </div>
                   <div class="row">
                     <div class="col-md-6">
                         <label for="email">Adresse e-mail *</label><br>
-                        <input type="email" class="champContact col-12" name="email"><br>
+                        <input type="email" id="email" class="champContact col-12" name="email"><br>
                     </div>
                     <div class="col-md-6">
                         <label for="tel">Téléphone</label><br>
-                        <input type="tel" name="tel" class="champContact col-12"><br>
+                        <input type="tel" id="tel" name="tel" class="champContact col-12"><br>
                     </div>
                   </div>
                   <div class="row">
@@ -100,24 +100,24 @@
                     </div>
                   </div>
                   <div class="d-flex">
-                    <input type="checkbox" name="caseAccepter" id="caseAccepter" value="accepted">
+                    <input type="checkbox" id="caseAccepter" name="caseAccepter" value="accepted">
                     <label for="caseAccepter" class="ps-2">J'accepte que mes données soient utilisées pour traiter ma demande.</label><br>
                   </div>                    
-                  <button type="submit" class="btn btn-primary">Envoyer</button><br>
+                  <button type="submit" class="btn btn-primary" aria-label="envoyer">Envoyer</button><br>
                     <i>Les champs marqués d'un astérisque (*) sont obligatoires.</i>
               </form>
           </div>
           <div class="col-lg-5">
               <div class="nousTrouver">
-                  <h4>Nous trouver</h4>
+                  <h3>Nous trouver</h3>
                   <ul>
-                      <li><img src="assets/icones/plan.svg" alt="" role="img" aria-hidden="true">4, quai des Tanneurs, 00000 Valbrune</li>
-                      <li><img src="assets/icones/telephone.svg" alt="" role="img" aria-hidden="true">Tél. 01 99 00 42 17 (du mardi au vendredi, de 9 h 30 à 12 h 30)</li>
-                      <li><img src="assets/icones/courriel.svg" alt="" role="img" aria-hidden="true">contact@museum-valbrune.example</li>
+                      <li><img src="assets/icones/plan.svg" alt="" aria-hidden="true">4, quai des Tanneurs, 00000 Valbrune</li>
+                      <li><img src="assets/icones/telephone.svg" alt="" aria-hidden="true">Tél. 01 99 00 42 17 (du mardi au vendredi, de 9 h 30 à 12 h 30)</li>
+                      <li><img src="assets/icones/courriel.svg" alt="" aria-hidden="true">contact@museum-valbrune.example</li>
                   </ul>
               </div>
               <div class="suivezNous">
-                  <h4>Suivez-nous</h4>
+                  <h3>Suivez-nous</h3>
                   <div class="d-flex">
                     <a href=""><img src="assets/icones/facebook.webp" alt="Lien vers la page Facebook du Muséum de Valbrune" loading="lazy"></a>
                     <a href=""><img src="assets/icones/instagram.webp" alt="Lien vers la page Instagram du Muséum de Valbrune" loading="lazy"></a>

@@ -26,7 +26,7 @@
         <div class="conteneurLogo col-5" >
           <a class="navbar-brand" href="index.html"><img src="assets/img/logo-museum-valbrune.svg" class="logo" alt="Logo du Muséum de Valbrune"></a>
         </div>
-        <button class="navbar-toggler col-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <button class="navbar-toggler col-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" aria-label="menu">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse col-lg-7" id="collapsibleNavbar">
@@ -37,7 +37,7 @@
             <li class="nav-item"><a class="nav-link" href="agenda.html">Agenda</a></li>
             <li class="nav-item"><a class="nav-link" href="infos-pratiques.html">Infos pratiques</a></li>
             <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-            <li><a  href="infos-pratiques.html#tarifs"><button class="btn btn-primary">Billeterie</button></a></li>
+            <li><a  href="infos-pratiques.html#tarifs" class="btn btn-primary">Billeterie</a></li>
           </ul>
         </div>
       </div>
@@ -51,10 +51,10 @@
 
   </header>
 
-  <main id="contenu404"><!-- Contenu principal de la page -->
+  <main id="contenu404" class="p-5"><!-- Contenu principal de la page -->
     <h1>404 : Page introuvable...</h1>
-    <p>Il semble que cette page n'existe pas.</p>
-    <button><a href="index.html">Revenir à l'accueil</a></button>
+    <h2>Il semble que cette page n'existe pas.</h2>
+    <a href="index.html" class="btn btn-primary my-3">Revenir à l'accueil</a>
   </main>
 
  <!-- Pied de page -->
