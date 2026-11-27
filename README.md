@@ -10,8 +10,8 @@ Projet de formation : intégration HTML5 / Bootstrap d'un site vitrine à partir
 
 ## Palier atteint
 
-- [ ] Palier 1 : Socle
-- [ ] Palier 2 : Standard
+- [X] Palier 1 : Socle
+- [X] Palier 2 : Standard
 - [ ] Palier 3 : Avancé
 
 ## Dépôt GitHub
