@@ -24,8 +24,8 @@ Projet de formation : intégration HTML5 / Bootstrap d'un site vitrine à partir
 | Tag | Date | État du projet à cette date |
 |-----|------|-----------------------------|
 | semaine-1 | 13/10/26 | structure des pages du site en html terminée (sauf page Agenda) |
-| semaine-2 |  |  |
-| semaine-3 (option) |  |  |
+| semaine-2 | 20/10/26 | CSS terminé sur l'ensemble du site, accessibilité et test de performance à terminer |
+| semaine-3 (option) | 27/11/26 | Accessibilité, tests de performance et validateur w3c passés avec succès, création de la page Agenda |
 
 ## Lancer le projet
 
@@ -63,7 +63,7 @@ Pour lancer le projet :
 - Comment mettre en forme proprement l'accordéon de la faq => solution trouvée sur doc officielle de Bootstrap, complément nécessaire avec Gemini pour l'intégration
 - Comment styliser blockquote avec bootstrap => solution trouvée sur doc officielle de Bootstrap
 - Comment gérer les espacements entre les differentes cartes de la page Exposition avec gx => solution trouvée sur doc officielle de Bootstrap, complément nécessaire avec Gemini pour l'intégration
-- Régler le scroll pour voir le début de la section lorsqu'on clic sur une ancre avec le header en sticky top
+- Régler le scroll pour voir le début de la section lorsqu'on clic sur une ancre avec le header en sticky top => solution trouvée via la recherche Google : définir scroll-padding-top
 
 
 ## Sources consultées
@@ -84,3 +84,11 @@ Si vous n'en avez pas utilisé, écrivez "Aucun".
 - Utilisation de Google Gemini pour la recherche web et l'aide avec le code : Comment faire un menu en accordéon avec Bootstrap (faq)
 - Utilisation de Google Gemini pour la recherche web et l'aide avec le code : Comment aligner à droite les liens du menu sur la page d'accueil
 - Utilisation de Google Gemini pour avoir une aide pour gérer les espacements entre plusieurs div avec des goutières
+
+
+## Rapport Lighthouse
+![alt text](rapport-lighthouse.png)
+
+
+## Validateur W3C
+![alt text](validator-w3c.png)

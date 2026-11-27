@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Agenda | Muséum de Valbrune</title>
+    <meta name="description" content="Ateliers, conférences et visites : le programme des trois prochains mois.">
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+    <!-- 1. Feuille de style de Bootstrap : à ajouter ici (voir dossier technique, § Stack et versions) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- 2. Votre feuille de style, TOUJOURS après celle de Bootstrap -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+<!-- Lien d'évitement -->
+<a class="evitement" href="#contenuAgenda">Aller au contenu</a>
+
+<!-- En-tête et navigation -->
+  <header class="header sticky-top container-fluid px-0">
+
+    <nav class="menu container-fluid px-5 py-3">
+      <div class="navbar navbar-expand-lg row navbar-light">
+        <div class="conteneurLogo col-5" >
+          <a class="navbar-brand" href="index.html"><img src="assets/img/logo-museum-valbrune.svg" class="logo" alt="Logo du Muséum de Valbrune"></a>
+        </div>
+        <button class="navbar-toggler col-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" aria-label="menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse col-lg-7" id="collapsibleNavbar">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+            <li class="nav-item"><a class="nav-link" href="le-museum.html">Le Muséum</a></li>
+            <li class="nav-item"><a class="nav-link" href="expositions.html">Expositions</a></li>
+            <li class="nav-item"><a class="nav-link active" href="agenda.html" aria-current="page">Agenda</a></li>
+            <li class="nav-item"><a class="nav-link" href="infos-pratiques.html">Infos pratiques</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li><a  href="infos-pratiques.html#tarifs" class="btn btn-primary">Billeterie</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <nav class="filAriane" aria-label="filAriane">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Accueil</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Agenda</li>
+      </ol>
+    </nav>
+
+  </header>
+
+<!-- Contenu principal de la page -->
+
+  <main id="contenuAgenda">
+      
+    <section class="entete">
+        <h1>Agenda</h1>
+        <p>Ateliers, conférences et visites : le programme des trois prochains mois.</p>
+    </section>
+
+    <section class="programmeAgenda container-fluid">
+        <div class="row">
+            <div class="accordion col-8" id="accordeon">
+                <div class="accordion-item">
+                    <div class="accordion-header" id="novembre2026">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">Novembre 2026
+                        </button>
+                    </div>
+                    <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#accordeon">
+                        <div class="accordion-body">
+                            <ul>
+                                <li class="d-flex">
+                                    <p class="texteSecondaire">Sam. 14 novembre, - 15 h</p>
+                                    <p>Visite guidée "Lumières du sous-sol"</p>
+                                    <button class="btn-badge">Tout public</button> 
+                                    <p>Inclus dans le billet</p>
+                                </li>
+                                <li class="d-flex">
+                                    <p class="texteSecondaire">Mer. 18 novembre, - 14 h 30</p>
+                                    <p>Atelier "Petits paléontologues"</p>
+                                    <button class="btn-badge">6-10 ans</button> 
+                                    <p>5 €</p>
+                                </li>
+                                <li class="d-flex">
+                                    <p class="texteSecondaire">Jeu. 26 novembre, - 18 h 30</p>
+                                    <p>Conférence "Pourquoi les minéraux brillent-ils ?"</p>
+                                    <button class="btn-badge">Adultes</button> 
+                                    <p>Gratuit</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="accordion-header" id="decembre2026">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                        Y a-t-il un vestiaire ?
+                        </button>
+                    </div>
+                    <div id="collapse2" class="collapse" data-bs-parent="#accordeon">
+                        <div class="card-body">
+                            <p>Oui, un vestiaire gratuit est à votre disposition à l'accueil. Les valises ne sont pas acceptées.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="question3">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3" >
+                        Peut-on pique-niquer ? 
+                        </button>
+                    </div>
+                    <div id="collapse3" class="collapse" data-bs-parent="#accordeon">
+                        <div class="card-body">
+                            <p>Une salle hors-sac est réservée aux groupes scolaires en semaine ; le weekend, elle est ouverte à tous.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 row g-3">
+                <div class="legendePublic row-6">
+                    <h2>Légende des publics</h2>
+                    <div class="d-flex">
+                    <button class="btn-badge">Tout public</button>
+                    <button class="btn-badge">Enfants</button>
+                    <button class="btn-badge">Adultes</button>
+                    </div>
+                </div>
+                <div class="reserverAtelier row-6">
+                    <img src="assets/icones/telephone.svg" alt="">
+                    <h2>Réserver un atelier</h2>
+                    <p>Les ateliers se réservent par téléphone au 01 99 00 42 17, du mardi au vendredi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  </main>
+
+ <!-- Pied de page -->
+  <footer>
+    <div class="colonnesFooter container-fluid row gy-3">
+      <div class="colonne col-md-4">
+        <img src="assets/img/logo-museum-valbrune-blanc.svg" alt="Logo blanc du Muséum de Valbrune" loading="lazy">
+        <ul>
+          <li>Muséum de Valbrune 4, quai des Tanneurs, 00000 Valbrune</li>
+          <li>Tél. 01 99 00 42 17</li>
+          <li>contact@museum-valbrune.example</li>
+        </ul>
+      </div>
+      <div class="colonne col-md-4">
+        <h3>Horaires</h3>
+        <ul>
+          <li>Mardi au vendredi : 10 h - 18 h</li>
+          <li>Samedi et dimanche : 10 h - 19 h</li>
+          <li>Fermé le lundi</li>
+        </ul>
+      </div>
+      <div class="colonne col-md-4">
+        <div>
+          <h3>Liens utiles</h3>
+          <ul>
+            <li><a href="infos-pratiques.html">Infos pratiques</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="mentions-legales.html">Mentions légales</a></li>
+          </ul>
+        </div>
+        <div class="reseauxSociaux row">
+          <img src="assets/icones/facebook.webp" alt="Lien vers la page Facebook du Muséum de Valbrune" class="iconeRS col-sm-4" loading="lazy">
+          <img src="assets/icones/instagram.webp" alt="Lien vers la page Instagram du Muséum de Valbrune" class="iconeRS col-sm-4" loading="lazy">
+          <img src="assets/icones/youtube.webp" alt="Lien vers la chaine YouTube du Muséum de Valbrune" class="iconeRS col-sm-4" loading="lazy">
+        </div>
+      </div>
+    </div>
+    <div class="basDePage">
+      <p>©2026 Muséum de Valbrune, site d'exercice réalisé par Simon Bert.</p>
+    </div>
+  </footer>
+
+  <!-- 3. Script de Bootstrap (bundle) : à ajouter ici, juste avant /body -->
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+</body>
+</html>
