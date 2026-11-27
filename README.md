@@ -92,3 +92,22 @@ Si vous n'en avez pas utilisé, écrivez "Aucun".
 
 ## Validateur W3C
 ![alt text](validator-w3c.png)
+
+## Point de contrôle
+- 1 Toutes les pages du palier visé existent et sont reliées par la navigation. => OK
+- 2 En-tête et pied de page identiques sur toutes les pages. => OK
+- 3 Affichage correct à 375, 768 et 1280 px, sans barre de défilement horizontale. => OK
+- 4 Menu replié fonctionnel sous 992 px. => OK
+- 5 Validateur W3C : 0 erreur sur chaque page. => OK
+- 6 Un seul h1 par page, hiérarchie des titres respectée. => OK
+- 7 Couleurs et polices conformes à la planche. => OK
+- 8 Boutons principaux et liens aux bonnes couleurs, y compris au survol. => OK
+- 9 Textes intégrés tels que fournis. => OK
+- 10 Chaque image a un attribut alt adapté, ainsi que width et height. => OK, mais images laissées en width et height="auto" pour s'adapter au device
+- 11 Navigation au clavier possible, focus visible, lien d'évitement présent. => OK
+- 12 Chaque champ de formulaire a un label relié. => OK
+- 13 Tableaux avec th et scope. => OK
+- 14 Aucune ressource inutile chargée ; aucun attribut style dans le HTML. => OK
+- 15 Remarques du client (sujet § 5.5) toutes traitées, questions notées dans le README. => OK
+- 16 Commits réguliers poussés sur GitHub ; tags semaine-1 et semaine-2 présents (git ls-remote --tags origin). => OK
+- 17 README complet. => OK
